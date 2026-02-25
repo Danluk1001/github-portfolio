@@ -549,3 +549,75 @@ main{
 .site-footer a.link-soft:hover{
   text-decoration: underline;
 }
+/* ===== Mobile Polish ===== */
+@media (max-width: 575px){
+
+  /* Containers breathe less on mobile */
+  .container{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Hero spacing */
+  .hero-card{
+    padding: 1.25rem !important;
+  }
+
+  /* Make hero image smaller on phones */
+  .avatar-ring{
+    width: 260px !important;
+    height: 260px !important;
+    margin: 0 auto;
+  }
+
+  /* Titles scale down */
+  .display-title,
+  .hero-title{
+    font-size: 2.1rem !important;
+    line-height: 1.1;
+  }
+
+  /* Buttons stack */
+  .hero-actions{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn{
+    width: 100%;
+  }
+
+  /* Cards become 1 column naturally via Bootstrap, but ensure padding */
+  .glass-card{
+    padding: 1.25rem !important;
+  }
+
+  /* Testimonials arrows tighter */
+  .testimonials-wrap{
+    padding: 0 36px;
+  }
+}
+/* ===== Hero avatar placement: mobile between paragraph and links ===== */
+.hero-avatar-mobile{ display: none; }
+
+@media (max-width: 991px){
+  .hero-avatar-desktop{ display: none !important; }
+  .hero-avatar-mobile{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* optional: make the avatar a bit smaller on mobile */
+  .hero-avatar-mobile .avatar-ring{
+    width: 260px !important;
+    height: 260px !important;
+  }
+}
+/* ===== Mobile spacing between Certifications & Technical Skills ===== */
+@media (max-width: 991px){
+
+  #capabilities .col-lg-5{
+    margin-bottom: 40px;
+  }
+
+}
