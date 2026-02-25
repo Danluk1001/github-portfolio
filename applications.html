@@ -23,70 +23,35 @@
 
   <!-- HEADER / NAV -->
   <header class="site-header py-3">
-    <nav class="navbar navbar-expand-lg navbar-dark container nav-glass">
-      <a class="navbar-brand brand-logo" href="index.html">
-        <img src="assets/DM-Logo.png" alt="Daniel Myers Logo">
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="index.html#web-work" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Work
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark dropdown-glass">
-              <li><a class="dropdown-item" href="index.html#web-work">Featured Work</a></li>
-              <li><a class="dropdown-item" href="web-work.html">View Full Web Work</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item active" href="applications.html">Applications</a></li>
-              <li><a class="dropdown-item disabled" href="#">Mobile Projects (Coming Soon)</a></li>
-              <li><a class="dropdown-item disabled" href="#">Graphic Design (Coming Soon)</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item"><a class="nav-link" href="index.html#resume">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-
-        <div class="ms-lg-3 mt-3 mt-lg-0">
-          <a class="btn btn-accent" href="#contact">Hire Me</a>
-        </div>
-      </div>
-    </nav>
+    <div id="site-nav"></div>
   </header>
 
-  <!-- HERO (VIDEO) -->
-  <section class="apps-hero">
-    <video class="apps-hero-video" autoplay muted loop playsinline>
+<!-- HERO (VIDEO) - Web Work style card -->
+<section class="container py-4 py-lg-5">
+  <div class="hero-card hero-media-card glass-card">
+    <video class="hero-card-video" autoplay muted loop playsinline>
       <source src="assets/Hero-App-Work.mp4" type="video/mp4">
     </video>
-    <div class="apps-hero-overlay"></div>
 
-    <div class="container apps-hero-content">
-      <div class="text-uppercase tiny-label mb-2">Selected Projects</div>
-      <h1 class="display-title mb-2">Applications</h1>
-      <p class="text-muted-2 apps-hero-sub">
+    <div class="hero-card-overlay"></div>
+
+    <div class="hero-card-content">
+      <h1 class="display-title mb-2">
+        <span class="accent">Applications</span>
+      </h1>
+
+      <p class="text-muted-2 mb-4" style="max-width: 720px;">
         Backend systems, automation tools, API integrations, and AI-assisted applications.
         Each project includes what it does and why it matters.
       </p>
 
-      <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start mt-3">
+      <div class="d-flex flex-wrap gap-2">
         <a class="btn btn-accent" href="#apps">Browse Projects</a>
-        <a class="btn btn-outline-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">
-          GitHub Profile
-        </a>
+        <a class="btn btn-outline-soft" href="index.html">Back Home</a>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
   <!-- APPLICATIONS GRID -->
   <main class="container py-5" id="apps">
     <div class="text-center mb-4">
@@ -410,5 +375,6 @@
       });
     });
   </script>
+<script src="nav.js"></script>  
 </body>
 </html>
