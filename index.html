@@ -59,7 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
   <!-- NAVBAR -->
   <header class="site-header py-3">
     <nav class="navbar navbar-expand-lg navbar-dark container nav-glass">
-      <a class="navbar-brand fw-semibold" href="#top">Myers</a>
+      <a class="navbar-brand brand-logo" href="index.html">
+        <img src="assets/DM-Logo.png" alt="Daniel Myers Logo">
+    </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
         aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
@@ -429,30 +431,88 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="container py-5">
-      <div class="text-center mb-4">
-        <div class="tiny-label text-uppercase">Testimonials</div>
-        <h2 class="section-title mb-0">What Clients Say</h2>
-      </div>
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="container py-5">
+  <div class="text-center mb-4">
+    <div class="tiny-label text-uppercase">Testimonials</div>
+    <h2 class="section-title mb-0">What Clients Say</h2>
+  </div>
 
-      <div class="glass-card p-4 testimonial-card mx-auto">
-        <div class="d-flex align-items-start gap-3">
-          <div class="quote-dot"></div>
-          <div>
-            <div class="testimonial-title">Client project #1</div>
-            <p class="card-body-text mb-3">
-              “Daniel delivered on time with exceptional polish. The site felt fast, modern, and easy to use.”
-            </p>
-            <div class="testimonial-person">
-              <div class="fw-semibold">Barbara Wilson</div>
-              <div class="text-muted-2 small">COO</div>
+  <div class="position-relative testimonials-wrap">
+    <!-- Prev/Next Buttons -->
+    <button class="testi-nav testi-prev" type="button" aria-label="Previous testimonial">
+      ‹
+    </button>
+    <button class="testi-nav testi-next" type="button" aria-label="Next testimonial">
+      ›
+    </button>
+
+    <!-- Track -->
+    <div class="testimonials-viewport">
+      <div class="testimonials-track" id="testimonialsTrack">
+
+        <!-- Card 1 -->
+        <div class="testi-slide">
+          <div class="glass-card p-4 testimonial-card h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="quote-dot"></div>
+              <div>
+                <div class="testimonial-title">TRVLSociety</div>
+                <p class="card-body-text mb-3">
+                  “Daniel delivered on time with exceptional polish. The site felt fast, modern, and easy to use.”
+                </p>
+                <div class="testimonial-person">
+                  <div class="fw-semibold">Byron Smith</div>
+                  <div class="text-muted-2 small">TRVLSociety</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
+        <!-- Card 2 -->
+        <div class="testi-slide">
+          <div class="glass-card p-4 testimonial-card h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="quote-dot"></div>
+              <div>
+                <div class="testimonial-title">Ciemonioeinc</div>
+                <p class="card-body-text mb-3">
+                  “Very professional, responsive, and detail-oriented. The final site was clean and easy for customers to navigate.”
+                </p>
+                <div class="testimonial-person">
+                  <div class="fw-semibold">Ciemone Sheppard</div>
+                  <div class="text-muted-2 small">Ciemonioeinc</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testi-slide">
+          <div class="glass-card p-4 testimonial-card h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="quote-dot"></div>
+              <div>
+                <div class="testimonial-title">5 Star Excursions</div>
+                <p class="card-body-text mb-3">
+                  “Communication was clear and consistent. The design direction matched exactly what we wanted, and updates were fast.”
+                </p>
+                <div class="testimonial-person">
+                  <div class="fw-semibold">Client Name</div>
+                  <div class="text-muted-2 small">5 Star Excursions</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more slides later -->
+      </div>
+    </div>
+  </div>
+</section>
     <!-- CONTACT -->
     <section id="contact" class="container py-5 pb-5">
       <div class="text-center mb-4">
@@ -461,55 +521,65 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
 
       <div class="glass-card p-4 p-lg-5">
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <div class="section-kicker mb-3">Details</div>
-            <div class="contact-list">
-              <div><span class="text-muted-2">Address:</span> Irvington, NJ</div>
-              <div><span class="text-muted-2">Freelance:</span> Available</div>
-              <div><span class="text-muted-2">Email:</span> <a class="link-soft" href="mailto:danielx001@gmail.com">danielx001@gmail.com</a></div>
-              <div><span class="text-muted-2">Phone:</span> (973) 532-8867</div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <form class="row g-3" action="https://formspree.io/f/mdalybja" method="POST">
+                <!-- Honeypot spam field (hidden) -->
+                <input type="text" name="_gotcha" style="display:none">
+
+                <div class="col-md-6">
+                    <label class="form-label small text-muted-2">Your Name</label>
+                    <input class="form-control form-dark" type="text" name="name" placeholder="Jane Doe" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label small text-muted-2">Your Email</label>
+                    <input class="form-control form-dark" type="email" name="email" placeholder="jane@email.com" required>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label small text-muted-2">Subject</label>
+                    <input class="form-control form-dark" type="text" name="subject" placeholder="Project idea…" required>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label small text-muted-2">Message</label>
+                    <textarea class="form-control form-dark" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="New message from DanielMyers.dev">
+
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-accent px-5">Send Message</button>
+                    <div class="text-muted-2 small mt-2" id="form-status"></div>
+                </div>
+                </form>
             </div>
-          </div>
-
-          <div class="col-lg-8">
-            <!-- NOTE: GitHub Pages is static. This form needs a service like Formspree/Netlify Forms. -->
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label small text-muted-2">Your Name</label>
-                <input class="form-control form-dark" type="text" placeholder="Jane Doe">
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label small text-muted-2">Your Email</label>
-                <input class="form-control form-dark" type="email" placeholder="jane@email.com">
-              </div>
-
-              <div class="col-12">
-                <label class="form-label small text-muted-2">Subject</label>
-                <input class="form-control form-dark" type="text" placeholder="Project idea…">
-              </div>
-
-              <div class="col-12">
-                <label class="form-label small text-muted-2">Message</label>
-                <textarea class="form-control form-dark" rows="4" placeholder="Tell me about your project…"></textarea>
-              </div>
-
-              <div class="col-12">
-                <button type="button" class="btn btn-accent px-4">Send Message</button>
-                <span class="text-muted-2 small ms-2">(Hook this to Formspree later)</span>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
 
-      <footer class="container pt-4 pb-5">
-        <div class="d-flex justify-content-between align-items-center text-muted-2 small">
-          <div>© <span id="year"></span> Daniel Myers — All rights reserved</div>
-          <a class="link-soft" href="#top">Back to top ↑</a>
+      <footer class="site-footer container py-4">
+  <div class="footer-inner glass-card p-4">
+    <div class="row g-3 align-items-center">
+      <div class="col-md-7">
+        <div class="text-muted-2 small">
+          Page made by <span class="fw-semibold">Daniel Myers</span>.
+          <span class="ms-1">© <span id="year"></span> All rights reserved.</span>
         </div>
-      </footer>
+
+        <div class="text-muted-2 small mt-2">
+          I only use information submitted through this site to respond to your message.
+          I do not sell, rent, or share your personal information.
+        </div>
+      </div>
+
+      <div class="col-md-5 text-md-end">
+        <a class="link-soft small me-3" href="privacy.html">Privacy Policy</a>
+        <a class="link-soft small" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
     </section>
   </main>
 
@@ -544,6 +614,75 @@ document.addEventListener("DOMContentLoaded", () => {
       // On mobile, Bootstrap handles click-to-open dropdown normally
     });
   });
+</script>
+<script>
+  const form = document.querySelector('form[action="https://formspree.io/f/mdalybja"]');
+  const statusEl = document.getElementById("form-status");
+
+  if (form && statusEl) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      statusEl.textContent = "Sending...";
+
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+
+        if (res.ok) {
+          statusEl.textContent = "✅ Sent! I’ll get back to you soon.";
+          form.reset();
+        } else {
+          statusEl.textContent = "❌ Something went wrong. Try again.";
+        }
+      } catch {
+        statusEl.textContent = "❌ Network error. Try again.";
+      }
+    });
+  }
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("testimonialsTrack");
+  if (!track) return;
+
+  const prevBtn = document.querySelector(".testi-prev");
+  const nextBtn = document.querySelector(".testi-next");
+  const slides = Array.from(track.querySelectorAll(".testi-slide"));
+
+  let index = 0;
+
+  const getSlideWidth = () => slides[0].getBoundingClientRect().width;
+  const getGap = () => {
+    const styles = window.getComputedStyle(track);
+    return parseFloat(styles.columnGap || styles.gap || "16");
+  };
+
+  const maxIndex = () => {
+    // how many are visible based on breakpoint
+    const vw = window.innerWidth;
+    const visible = vw <= 575 ? 1 : vw <= 991 ? 2 : 3;
+    return Math.max(0, slides.length - visible);
+  };
+
+  const update = () => {
+    const w = getSlideWidth();
+    const gap = getGap();
+    index = Math.min(Math.max(index, 0), maxIndex());
+    track.style.transform = `translateX(${-index * (w + gap)}px)`;
+    if (prevBtn) prevBtn.disabled = index === 0;
+    if (nextBtn) nextBtn.disabled = index === maxIndex();
+  };
+
+  prevBtn?.addEventListener("click", () => { index -= 1; update(); });
+  nextBtn?.addEventListener("click", () => { index += 1; update(); });
+  window.addEventListener("resize", update);
+
+  update();
+});
 </script>
 </body>
 </html>

@@ -461,3 +461,87 @@ main{
     height: 10px;               /* invisible bridge */
   }
 }
+/* ===== Navbar Logo ===== */
+.brand-logo img{
+  height: 38px;   /* Adjust size here */
+  width: auto;
+  object-fit: contain;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+/* Subtle hover effect */
+.brand-logo:hover img{
+  transform: scale(1.05);
+  opacity: .9;
+}
+/* ===== Testimonials Carousel (3-up desktop, 2-up tablet, 1-up mobile) ===== */
+.testimonials-wrap{
+  padding: 0 48px; /* space for arrows */
+}
+
+.testimonials-viewport{
+  overflow: hidden;
+}
+
+.testimonials-track{
+  display: flex;
+  gap: 16px;
+  transition: transform .35s ease;
+  will-change: transform;
+}
+
+/* Each slide width changes by breakpoint */
+.testi-slide{
+  flex: 0 0 calc((100% - 32px) / 3); /* 3 visible, gap*2 */
+}
+
+@media (max-width: 991px){
+  .testi-slide{
+    flex: 0 0 calc((100% - 16px) / 2); /* 2 visible */
+  }
+}
+
+@media (max-width: 575px){
+  .testimonials-wrap{ padding: 0 40px; }
+  .testi-slide{
+    flex: 0 0 100%; /* 1 visible */
+  }
+}
+
+/* Nav buttons */
+.testi-nav{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(10,18,32,.65);
+  color: rgba(255,255,255,.88);
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 12px 35px rgba(0,0,0,.35);
+}
+
+.testi-nav:hover{
+  background: rgba(255,255,255,.06);
+  border-color: rgba(86,167,255,.35);
+}
+
+.testi-prev{ left: 0; }
+.testi-next{ right: 0; }
+/* ===== Footer ===== */
+.site-footer .footer-inner{
+  border-radius: 18px;
+}
+
+.site-footer a.link-soft{
+  text-decoration: none;
+}
+.site-footer a.link-soft:hover{
+  text-decoration: underline;
+}
