@@ -4,44 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daniel L. Myers Portfolio</title>
-
-  <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll(".counter");
-
-  const animateCounter = (counter) => {
-    const target = +counter.getAttribute("data-target");
-    const duration = 1200; // total animation time (ms)
-    const increment = target / (duration / 16); // ~60fps
-    let current = 0;
-
-    const updateCounter = () => {
-      current += increment;
-      if (current < target) {
-        counter.textContent = Math.ceil(current);
-        requestAnimationFrame(updateCounter);
-      } else {
-        counter.textContent = target;
-      }
-    };
-
-    updateCounter();
-  };
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounter(entry.target);
-        observer.unobserve(entry.target); // runs once
-      }
-    });
-  }, { threshold: 0.6 });
-
-  counters.forEach(counter => {
-    observer.observe(counter);
-  });
-});
-</script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -143,6 +105,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="stat-num counter" data-target="23">0</div>
                 <div class="stat-label">Professional<br />Certifications</div>
               </div>
+              <div class="stat">
+                <div class="stat-num counter" data-target="100" data-suffix="%">0%</div>
+                <div class="stat-label">Customer<br />Success</div>
+            </div>
             </div>
           </div>
 
@@ -358,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="col-md-4">
       <div class="glass-card project-card h-100">
         <div class="project-img">
-          <img src="assets\Project-3.png" alt="Project 3">
+          <img src="assets\project-3.png" alt="Project 3">
         </div>
         <div class="p-4">
           <div class="card-title">5 Star Excersions</div>
@@ -682,6 +648,40 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", update);
 
   update();
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  const animateCounter = (counter) => {
+    const target = Number(counter.dataset.target || 0);
+    const suffix = counter.dataset.suffix || "";
+    const duration = 1200;
+    const startTime = performance.now();
+
+    const step = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const value = Math.round(target * progress);
+
+      counter.textContent = `${value}${suffix}`;
+
+      if (progress < 1) requestAnimationFrame(step);
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+
+  counters.forEach((counter) => observer.observe(counter));
 });
 </script>
 </body>
