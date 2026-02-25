@@ -811,3 +811,20 @@ main{
   backdrop-filter: blur(10px);
   color: rgba(255,255,255,.85);
 }
+/* CMS badge on project cards */
+.project-img{
+  position: relative;
+}
+
+.cms-pill{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.16);
+  color: rgba(255,255,255,.9);
+  backdrop-filter: blur(10px);
+}
