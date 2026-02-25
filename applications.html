@@ -1,0 +1,414 @@
+<!-- applications.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Applications | Daniel Myers</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+  <!-- Your global styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="applications.css" />
+</head>
+
+<body id="top">
+
+  <!-- HEADER / NAV -->
+  <header class="site-header py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark container nav-glass">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <img src="assets/DM-Logo.png" alt="Daniel Myers Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html#web-work" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Work
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-glass">
+              <li><a class="dropdown-item" href="index.html#web-work">Featured Work</a></li>
+              <li><a class="dropdown-item" href="web-work.html">View Full Web Work</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item active" href="applications.html">Applications</a></li>
+              <li><a class="dropdown-item disabled" href="#">Mobile Projects (Coming Soon)</a></li>
+              <li><a class="dropdown-item disabled" href="#">Graphic Design (Coming Soon)</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="index.html#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="ms-lg-3 mt-3 mt-lg-0">
+          <a class="btn btn-accent" href="#contact">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO (VIDEO) -->
+  <section class="apps-hero">
+    <video class="apps-hero-video" autoplay muted loop playsinline>
+      <source src="assets/Hero-App-Work.mp4" type="video/mp4">
+    </video>
+    <div class="apps-hero-overlay"></div>
+
+    <div class="container apps-hero-content">
+      <div class="text-uppercase tiny-label mb-2">Selected Projects</div>
+      <h1 class="display-title mb-2">Applications</h1>
+      <p class="text-muted-2 apps-hero-sub">
+        Backend systems, automation tools, API integrations, and AI-assisted applications.
+        Each project includes what it does and why it matters.
+      </p>
+
+      <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start mt-3">
+        <a class="btn btn-accent" href="#apps">Browse Projects</a>
+        <a class="btn btn-outline-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">
+          GitHub Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATIONS GRID -->
+  <main class="container py-5" id="apps">
+    <div class="text-center mb-4">
+      <div class="tiny-label text-uppercase">Software Engineering</div>
+      <h2 class="section-title mb-0">Featured Applications</h2>
+    </div>
+
+    <!-- Filters (optional - wired for later) -->
+    <div class="apps-filters d-flex flex-wrap gap-2 justify-content-center mb-4">
+      <button class="btn btn-outline-soft btn-sm is-active" data-filter="all" type="button">All</button>
+      <button class="btn btn-outline-soft btn-sm" data-filter="ai" type="button">AI</button>
+      <button class="btn btn-outline-soft btn-sm" data-filter="backend" type="button">Backend</button>
+      <button class="btn btn-outline-soft btn-sm" data-filter="mobile" type="button">Mobile</button>
+      <button class="btn btn-outline-soft btn-sm" data-filter="systems" type="button">Systems</button>
+      <button class="btn btn-outline-soft btn-sm" data-filter="utility" type="button">Utilities</button>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- 1) Sudoku Server With Coach (example) -->
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="ai backend">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-ai">AI</span>
+
+          <div class="card-title mb-2">Sudoku Server With Coach</div>
+
+          <div class="card-body-text">
+            Python Sudoku engine with structured validation and coaching-style guidance.
+            Built for clean state management, rule enforcement, and scalable logic separation.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">Python</span>
+            <span class="app-tag">Validation</span>
+            <span class="app-tag">Architecture</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">High Impact</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2) Spider-Scraper -->
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="backend utility">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-core">Core</span>
+
+          <div class="card-title mb-2">Spider-Scraper</div>
+
+          <div class="card-body-text">
+            Automation-focused web scraper that extracts paginated blog content and exports
+            structured CSVs for CMS workflows. Emphasizes clean parsing and repeatable pipelines.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">Python</span>
+            <span class="app-tag">Scraping</span>
+            <span class="app-tag">CSV Export</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">High Value</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3) C++ Chess Engine -->
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="systems">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-adv">Advanced</span>
+
+          <div class="card-title mb-2">C++ Chess Engine</div>
+
+          <div class="card-body-text">
+            Object-oriented chess engine focused on move validation, board state logic,
+            and clean system design. Highlights algorithmic thinking and systems fundamentals.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">C++</span>
+            <span class="app-tag">OOP</span>
+            <span class="app-tag">Algorithms</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">Skill Proof</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4) Cannon Game (Android) -->
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="mobile">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-mobile">Mobile</span>
+
+          <div class="card-title mb-2">Cannon Game (Android)</div>
+
+          <div class="card-body-text">
+            Android app demonstrating interactive gameplay logic and event-driven UI patterns.
+            A strong example of mobile fundamentals and applied OOP.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">Java</span>
+            <span class="app-tag">Android</span>
+            <span class="app-tag">UI Events</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">Foundational</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5) Weather Viewer -->
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="backend utility">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-api">API</span>
+
+          <div class="card-title mb-2">Weather Viewer</div>
+
+          <div class="card-body-text">
+            App that consumes external API data, parses JSON, and renders user-friendly outputs.
+            Demonstrates API integration, error handling, and clean data flow.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">APIs</span>
+            <span class="app-tag">JSON</span>
+            <span class="app-tag">Integration</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">Practical</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6) github-portfolio (this site repo) -->
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="utility backend">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-core">Core</span>
+
+          <div class="card-title mb-2">GitHub Portfolio</div>
+
+          <div class="card-body-text">
+            This portfolio site: responsive UI, glass styling system, reusable sections,
+            and GitHub Pages deployment. Built as a clean base to scale into multiple pages.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">HTML/CSS</span>
+            <span class="app-tag">Bootstrap</span>
+            <span class="app-tag">GitHub Pages</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">Production</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-5">
+      <a class="btn btn-accent px-5" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">
+        View All Repositories
+      </a>
+    </div>
+  </main>
+
+  <!-- CONTACT (centered form, like your updated version) -->
+  <section id="contact" class="container py-5 pb-5">
+    <div class="text-center mb-4">
+      <div class="tiny-label text-uppercase">Contact Me</div>
+      <h2 class="section-title mb-0">Let’s Work Together</h2>
+    </div>
+
+    <div class="glass-card p-4 p-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-8">
+          <form class="row g-3" action="https://formspree.io/f/mdalybja" method="POST">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <div class="col-md-6">
+              <label class="form-label small text-muted-2">Your Name</label>
+              <input class="form-control form-dark" type="text" name="name" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label small text-muted-2">Your Email</label>
+              <input class="form-control form-dark" type="email" name="email" placeholder="jane@email.com" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label small text-muted-2">Subject</label>
+              <input class="form-control form-dark" type="text" name="subject" placeholder="Project idea…" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label small text-muted-2">Message</label>
+              <textarea class="form-control form-dark" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="New message from DanielMyers.dev">
+
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-accent px-5">Send Message</button>
+              <div class="text-muted-2 small mt-2" id="form-status"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer container py-4">
+    <div class="footer-inner glass-card p-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-7">
+          <div class="text-muted-2 small">
+            Page made by <span class="fw-semibold">Daniel Myers</span>.
+            <span class="ms-1">© <span id="year"></span> All rights reserved.</span>
+          </div>
+
+          <div class="text-muted-2 small mt-2">
+            I only use information submitted through this site to respond to your message.
+            I do not sell, rent, or share your personal information.
+          </div>
+        </div>
+
+        <div class="col-md-5 text-md-end">
+          <a class="link-soft small me-3" href="privacy.html">Privacy Policy</a>
+          <a class="link-soft small" href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+          integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+          crossorigin="anonymous"></script>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Optional: filter buttons (works now, you can keep or remove)
+    const filterBtns = document.querySelectorAll(".apps-filters [data-filter]");
+    const items = document.querySelectorAll(".app-item");
+
+    function setActive(btn){
+      filterBtns.forEach(b => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const f = btn.dataset.filter;
+        setActive(btn);
+
+        items.forEach(item => {
+          const tags = (item.dataset.tags || "").split(" ");
+          item.style.display = (f === "all" || tags.includes(f)) ? "" : "none";
+        });
+      });
+    });
+
+    // Optional: inline success text (no redirect)
+    const form = document.querySelector('form[action="https://formspree.io/f/mdalybja"]');
+    const statusEl = document.getElementById("form-status");
+    if (form && statusEl) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        statusEl.textContent = "Sending...";
+
+        const data = new FormData(form);
+        try {
+          const res = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: { "Accept": "application/json" }
+          });
+
+          if (res.ok) {
+            statusEl.textContent = "✅ Sent! I’ll get back to you soon.";
+            form.reset();
+          } else {
+            statusEl.textContent = "❌ Something went wrong. Try again.";
+          }
+        } catch {
+          statusEl.textContent = "❌ Network error. Try again.";
+        }
+      });
+    }
+
+    // Desktop: click Work -> jump to featured work on homepage (instead of toggling dropdown)
+    document.addEventListener("DOMContentLoaded", () => {
+      const workLink = document.querySelector(".nav-item.dropdown > a.nav-link.dropdown-toggle");
+      if (!workLink) return;
+
+      workLink.addEventListener("click", (e) => {
+        if (window.matchMedia("(min-width: 992px)").matches) {
+          // navigate to homepage anchor
+          e.preventDefault();
+          window.location.href = workLink.getAttribute("href");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
