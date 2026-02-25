@@ -287,3 +287,177 @@ html, body{
   .hero-card{ padding: 1.5rem; }
   .avatar-ring{ width: 240px; height: 240px; }
 }
+/* ===== PROJECT SECTION ===== */
+
+.project-card {
+  transition: transform .35s ease, box-shadow .35s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(43,120,255,.25);
+}
+
+.project-img {
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.05);
+}
+/* ===== Web Work Video Hero ===== */
+.video-hero{
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+  padding: 0; /* video handles the background */
+}
+
+.video-hero__media{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  filter: saturate(1.05) contrast(1.05) brightness(.72);
+}
+
+.video-hero__overlay{
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 500px at 20% 20%, rgba(86,167,255,.20), transparent 55%),
+    linear-gradient(90deg, rgba(7,11,18,.92), rgba(7,11,18,.55) 55%, rgba(7,11,18,.30));
+}
+
+.video-hero__content{
+  position: relative;
+  z-index: 1;
+  padding: 2.2rem;
+  max-width: 780px;
+}
+
+@media (min-width: 992px){
+  .video-hero{ min-height: 420px; }
+  .video-hero__content{ padding: 2.75rem; }
+}
+
+/* ===== Featured Web Work Cards ===== */
+.webwork-card{
+  overflow: hidden;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.webwork-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(43,120,255,.25);
+}
+
+.webwork-img{
+  height: 220px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  overflow: hidden;
+}
+
+.webwork-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+
+.webwork-card:hover .webwork-img img{
+  transform: scale(1.06);
+}
+/* Dropdown matches glass theme */
+.dropdown-glass{
+  background: rgba(10,18,32,.92);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 14px;
+  padding: .5rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,.45);
+  backdrop-filter: blur(10px);
+}
+
+.dropdown-glass .dropdown-item{
+  border-radius: 10px;
+  color: rgba(255,255,255,.78);
+}
+
+.dropdown-glass .dropdown-item:hover{
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.95);
+}
+
+.dropdown-glass .dropdown-divider{
+  border-color: rgba(255,255,255,.12);
+}
+
+/* Hover open dropdown on desktop only */
+@media (min-width: 992px){
+  .navbar .dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: .25rem;
+  }
+  .navbar .dropdown:hover .dropdown-toggle{
+    color: rgba(255,255,255,.95);
+  }
+}
+/* Keep navbar + dropdown above page content */
+.site-header{
+  position: sticky;   /* keeps it on top while scrolling */
+  top: 0;
+  z-index: 2000;      /* higher than main */
+}
+
+/* Make sure the dropdown itself is above everything */
+.nav-glass,
+.navbar,
+.dropdown-menu{
+  z-index: 2100;
+}
+
+/* Your main content can stay normal, just ensure it's below header */
+main{
+  position: relative;
+  z-index: 1;
+}
+/* Desktop hover behavior: keep dropdown open while hovering toggle OR menu */
+@media (min-width: 992px){
+
+  /* show menu when parent dropdown OR the menu itself is hovered */
+  .navbar .dropdown:hover > .dropdown-menu,
+  .navbar .dropdown-menu:hover{
+    display: block;
+  }
+
+  /* Remove the hover "gap" between link and menu */
+  .navbar .dropdown-menu{
+    margin-top: 0;              /* was .25rem */
+    top: 100%;
+  }
+
+  /* Optional: make it easier to keep hovered (adds safe hover zone) */
+  .navbar .dropdown{
+    position: relative;
+  }
+  .navbar .dropdown::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;               /* invisible bridge */
+  }
+}
