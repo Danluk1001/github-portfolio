@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel L. Myers Portfolio</title>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  const animateCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    const duration = 1200; // total animation time (ms)
+    const increment = target / (duration / 16); // ~60fps
+    let current = 0;
+
+    const updateCounter = () => {
+      current += increment;
+      if (current < target) {
+        counter.textContent = Math.ceil(current);
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = target;
+      }
+    };
+
+    updateCounter();
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target); // runs once
+      }
+    });
+  }, { threshold: 0.6 });
+
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+});
+</script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+  <!-- Top Glow / Background Effects -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="site-header py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark container nav-glass">
+      <a class="navbar-brand fw-semibold" href="#top">Myers</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+        aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-accent btn-sm px-3" href="#contact">Hire Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="container py-4 py-lg-5">
+      <div class="hero-card glass-card">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <div class="text-uppercase tiny-label mb-2">Hello, my name is</div>
+
+            <h1 class="display-title mb-1">
+              <span class="accent">Daniel</span> Myers
+            </h1>
+
+            <div class="sub-title mb-3">Full Stack Engineer</div>
+
+            <p class="text-muted-2 mb-4">
+              Full Stack Engineer who builds complete products—from responsive UI/UX and 
+              frontend architecture to backend APIs, databases, and server logic. 
+              Comfortable working across HTML/CSS/JavaScript and modern frameworks, 
+              and shipping Python-based services (Flask/FastAPI/Django) that are 
+              scalable and maintainable. I also develop automation and application 
+              tools that solve real operational problems.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 align-items-center mb-4">
+              <a class="link-soft" href="https://www.linkedin.com/in/daniel-myers-2582611a3/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="link-soft" href="mailto:danielx001@gmail.com">Email</a>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-accent" href="assets/Daniel-Myers-Resume.pdf" target="_blank" rel="noreferrer">
+                Download Resume
+              </a>
+              <a class="btn btn-outline-soft" href="#capabilities">
+                My Skills
+              </a>
+            </div>
+
+            <div class="hero-stats mt-4">
+              <div class="stat">
+                <div class="stat-num counter" data-target="5">0</div>
+                <div class="stat-label">Year of<br />Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num counter" data-target="23">0</div>
+                <div class="stat-label">Professional<br />Certifications</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 d-flex justify-content-lg-end justify-content-center">
+            <div class="avatar-ring">
+              <img class="avatar-img" src="assets/profile-hero.png" alt="Daniel Myers headshot" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section id="capabilities" class="container py-5">
+      <div class="text-center mb-4">
+        <div class="tiny-label text-uppercase">Capabilities</div>
+        <h2 class="section-title mb-0">Technical Skills &amp; Certifications</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="section-kicker mb-2">Certifications</div>
+          <div class="glass-card p-4 h-100">
+            <ul class="list-check mb-0">
+              <li>IBM Generative AI Engineering Specialization</li>
+              <li>Generative AI and LLMs: Architecture and Data Preparation</li>
+              <li>Gen AI Foundational Models for NLP & Language Understanding</li>
+              <li>Generative AI Language Modeling with Transformers</li>
+              <li>Generative AI Engineering and Fine-Tuning Transformers</li>
+              <li>Fundamentals of AI Agents Using RAG and LangChain</li>
+              <li>Developing AI Applications with Python and Flask</li>
+              <li>Building Generative AI-Powered Applications with Python</li>
+              <li>Machine Learning with Python</li>
+              <li>Data Analysis with Python</li>
+              <li>Google UX Design Certificate</li>
+              <li>Create High-Fidelity Designs and Prototypes in Figma</li>
+              <li>Introduction to Artificial Intelligence (AI)</li>
+              <li>Introduction to Deep Learning & Neural Networks with Keras</li>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="section-kicker mb-2">Technical Skills</div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="glass-card p-4 h-100">
+                <div class="card-title">🧩 Languages &amp; Core</div>
+                <div class="card-body-text">
+                JavaScript (ES6+), Python, SQL, HTML5, CSS3,
+                Java & C# (working knowledge), Rust (foundational)
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card p-4 h-100">
+                <div class="card-title">🏗 Frontend Engineering</div>
+                <div class="card-body-text">
+                  Responsive, accessible UI development,
+                  component-based architecture, state management fundamentals,
+                  performance optimization, cross-browser debugging,
+                  API integration & dynamic data rendering
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card p-4 h-100">
+                <div class="card-title">⚙ Backend Engineering</div>
+                <div class="card-body-text">
+                REST API design & integration,
+                Python (Flask / FastAPI),
+                authentication & role-based access control,
+                database modeling & SQL queries,
+                data validation, structured error handling,
+                background tasks & automation
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card p-4 h-100">
+                <div class="card-title">🗄 Data & Systems</div>
+                <div class="card-body-text">
+                Relational database design,
+                JSON API contracts,
+                data transformation pipelines,
+                AI service integration (LLMs, RAG concepts),
+                structured logging & application monitoring,
+                scalable application structure
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card p-4 h-100">
+                <div class="card-title">🚀 DevOps & Deployment</div>
+                <div class="card-body-text">
+                Git workflow (feature branches, pull requests),
+                CI/CD fundamentals,
+                environment configuration (.env, staging vs production),
+                cloud exposure (Azure basics),
+                build & deployment processes
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card p-4 h-100 dashed-card">
+                <div class="card-title">🧠 Engineering Practices</div>
+                <div class="card-body-text">
+                Agile collaboration,
+                code reviews & QA workflows,
+                modular architecture principles,
+                debugging & performance tuning,
+                problem decomposition,
+                system-level thinking across frontend & backend
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="container py-5">
+      <div class="text-center mb-4">
+        <div class="tiny-label text-uppercase">What I Do</div>
+        <h2 class="section-title mb-0">My Services</h2>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="glass-card p-4 h-100">
+            <div class="card-title">Web Components &amp; Frontend</div>
+            <p class="card-body-text mb-3">
+              Translate designs into responsive, accessible UI with clean HTML/CSS/JS and modern frameworks.
+            </p>
+            <a class="link-soft" href="#contact">See Work</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="glass-card p-4 h-100">
+            <div class="card-title">REST APIs &amp; Integrations</div>
+            <p class="card-body-text mb-3">
+              Build and integrate REST APIs, automate workflows, and connect services for real-world systems.
+            </p>
+            <a class="link-soft" href="#contact">See Work</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="glass-card p-4 h-100">
+            <div class="card-title">Responsive Design &amp; CMS</div>
+            <p class="card-body-text mb-3">
+              Optimize UX and performance for mobile-first websites and CMS-based builds (WordPress/Webflow).
+            </p>
+            <a class="link-soft" href="#contact">See Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="container py-5">
+      <div class="text-center mb-4">
+        <div class="tiny-label text-uppercase">Resume</div>
+        <h2 class="section-title mb-0">Education &amp; Experience</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <div class="section-kicker mb-3">Education</div>
+
+            <div class="resume-block">
+              <div class="resume-dates">2017 — 2025</div>
+              <div class="resume-title">Computer Science B.A., Mathematics Minor</div>
+              <div class="resume-sub">Rutgers University — Newark, NJ (Magna Cum Laude)</div>
+            </div>
+
+            <hr class="soft-hr" />
+
+            <div class="resume-block">
+              <div class="resume-dates">2019 — 2024</div>
+              <div class="resume-title">Additional Coursework / Projects</div>
+              <div class="resume-sub">Full-stack development, algorithms, databases, and automation projects</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <div class="resume-block">
+              <div class="resume-dates accent">May 2024 — Present</div>
+              <div class="resume-title">Junior Web Developer — Big Orange Lab (Remote)</div>
+              <div class="resume-sub">
+                Built responsive components, improved page performance, collaborated with teams, and supported CMS + API work.
+              </div>
+            </div>
+
+            <hr class="soft-hr" />
+
+            <div class="resume-block">
+              <div class="resume-dates">Oct 2021 — Dec 2021</div>
+              <div class="resume-title">Software Development Intern — TruTech Solutions, Inc.</div>
+              <div class="resume-sub">
+                Supported internal tools using Python/SQL, built lightweight REST APIs, and improved maintainability through testing and documentation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="container py-5">
+      <div class="text-center mb-4">
+        <div class="tiny-label text-uppercase">Testimonials</div>
+        <h2 class="section-title mb-0">What Clients Say</h2>
+      </div>
+
+      <div class="glass-card p-4 testimonial-card mx-auto">
+        <div class="d-flex align-items-start gap-3">
+          <div class="quote-dot"></div>
+          <div>
+            <div class="testimonial-title">Client project #1</div>
+            <p class="card-body-text mb-3">
+              “Daniel delivered on time with exceptional polish. The site felt fast, modern, and easy to use.”
+            </p>
+            <div class="testimonial-person">
+              <div class="fw-semibold">Barbara Wilson</div>
+              <div class="text-muted-2 small">COO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container py-5 pb-5">
+      <div class="text-center mb-4">
+        <div class="tiny-label text-uppercase">Contact Me</div>
+        <h2 class="section-title mb-0">Let’s Work Together</h2>
+      </div>
+
+      <div class="glass-card p-4 p-lg-5">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="section-kicker mb-3">Details</div>
+            <div class="contact-list">
+              <div><span class="text-muted-2">Address:</span> Irvington, NJ</div>
+              <div><span class="text-muted-2">Freelance:</span> Available</div>
+              <div><span class="text-muted-2">Email:</span> <a class="link-soft" href="mailto:danielx001@gmail.com">danielx001@gmail.com</a></div>
+              <div><span class="text-muted-2">Phone:</span> (973) 532-8867</div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <!-- NOTE: GitHub Pages is static. This form needs a service like Formspree/Netlify Forms. -->
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small text-muted-2">Your Name</label>
+                <input class="form-control form-dark" type="text" placeholder="Jane Doe">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label small text-muted-2">Your Email</label>
+                <input class="form-control form-dark" type="email" placeholder="jane@email.com">
+              </div>
+
+              <div class="col-12">
+                <label class="form-label small text-muted-2">Subject</label>
+                <input class="form-control form-dark" type="text" placeholder="Project idea…">
+              </div>
+
+              <div class="col-12">
+                <label class="form-label small text-muted-2">Message</label>
+                <textarea class="form-control form-dark" rows="4" placeholder="Tell me about your project…"></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="button" class="btn btn-accent px-4">Send Message</button>
+                <span class="text-muted-2 small ms-2">(Hook this to Formspree later)</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer class="container pt-4 pb-5">
+        <div class="d-flex justify-content-between align-items-center text-muted-2 small">
+          <div>© <span id="year"></span> Daniel Myers — All rights reserved</div>
+          <a class="link-soft" href="#top">Back to top ↑</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+</html>
