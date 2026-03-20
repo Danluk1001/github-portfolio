@@ -915,3 +915,32 @@ main{
     font-size: .92rem;
   }
 }
+/* ===== Web Work page polish ===== */
+.hero-lead{
+  max-width: 760px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.project-card .card-body-text,
+.webwork-card .card-body-text{
+  min-height: 110px;
+}
+
+.cms-pill{
+  letter-spacing: .03em;
+  font-weight: 600;
+}
+
+.video-hero__content .display-title{
+  letter-spacing: -.02em;
+}
+
+.video-hero__content .btn{
+  border-radius: 999px;
+}
+
+#featured .section-title,
+#bol-work .section-title{
+  letter-spacing: -.02em;
+}
