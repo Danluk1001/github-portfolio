@@ -1,4 +1,3 @@
-<!-- applications.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,29 +13,25 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Application portfolio showcasing Daniel Myers' experience across Python, JavaScript, C++, Java, APIs, automation, UI engineering, and full-stack problem solving.">
+  <meta name="keywords" content="Daniel Myers, Applications, UI Engineer, Full Stack Developer, Python, JavaScript, C++, Java, APIs, Automation, Portfolio">
 
-  <title>Applications | Daniel Myers</title>
+  <title>Daniel Myers | Engineering Applications</title>
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
         crossorigin="anonymous">
 
-  <!-- Your global styles -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Page-specific styles -->
   <link rel="stylesheet" href="applications.css" />
 </head>
 
 <body id="top">
 
-  <!-- HEADER / NAV -->
   <header class="site-header py-3">
     <div id="site-nav"></div>
   </header>
 
-<!-- HERO (VIDEO) - Web Work style card -->
 <section class="container py-4 py-lg-5">
   <div class="hero-card hero-media-card glass-card">
     <video class="hero-card-video" autoplay muted loop playsinline>
@@ -46,13 +41,16 @@
     <div class="hero-card-overlay"></div>
 
     <div class="hero-card-content">
+      <div class="tiny-label text-uppercase mb-2">Engineering Portfolio</div>
+
       <h1 class="display-title mb-2">
         <span class="accent">Applications</span>
       </h1>
 
-      <p class="text-muted-2 mb-4" style="max-width: 720px;">
-        Backend systems, automation tools, API integrations, and AI-assisted applications.
-        Each project includes what it does and why it matters.
+      <p class="text-muted-2 mb-4 hero-lead" style="max-width: 760px;">
+        A collection of applications that highlight how I solve problems across the stack —
+        from UI-focused projects and frontend interaction patterns to Python automation,
+        API integrations, systems logic, and language-driven engineering fundamentals.
       </p>
 
       <div class="d-flex flex-wrap gap-2">
@@ -62,35 +60,56 @@
     </div>
   </div>
 </section>
-  <!-- APPLICATIONS GRID -->
+
+<section class="container pb-2">
+  <div class="glass-card p-4 p-lg-5">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-4">
+        <div class="tiny-label text-uppercase mb-2">What This Shows</div>
+        <h2 class="section-title mb-0">Language Range + Engineering Thinking</h2>
+      </div>
+      <div class="col-lg-8">
+        <p class="card-body-text mb-3">
+          These projects represent more than individual tools — they show how I think through architecture,
+          user needs, logic, and maintainability across different languages and environments.
+        </p>
+        <p class="card-body-text mb-0">
+          Together, they demonstrate experience with Python, JavaScript, C++, Java, APIs, UI patterns,
+          automation workflows, and full-stack problem solving.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
   <main class="container py-5" id="apps">
     <div class="text-center mb-4">
       <div class="tiny-label text-uppercase">Software Engineering</div>
-      <h2 class="section-title mb-0">Featured Applications</h2>
+      <h2 class="section-title mb-0">Applications & Engineering Projects</h2>
     </div>
 
-    <!-- Filters (optional - wired for later) -->
     <div class="apps-filters d-flex flex-wrap gap-2 justify-content-center mb-4">
       <button class="btn btn-outline-soft btn-sm is-active" data-filter="all" type="button">All</button>
       <button class="btn btn-outline-soft btn-sm" data-filter="ai" type="button">AI</button>
       <button class="btn btn-outline-soft btn-sm" data-filter="backend" type="button">Backend</button>
-      <button class="btn btn-outline-soft btn-sm" data-filter="mobile" type="button">Mobile</button>
+      <button class="btn btn-outline-soft btn-sm" data-filter="frontend" type="button">Frontend</button>
       <button class="btn btn-outline-soft btn-sm" data-filter="systems" type="button">Systems</button>
       <button class="btn btn-outline-soft btn-sm" data-filter="utility" type="button">Utilities</button>
     </div>
 
     <div class="row g-4">
 
-      <!-- 1) Sudoku Server With Coach (example) -->
-      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="ai backend">
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="ai backend utility">
         <div class="glass-card p-4 h-100 app-card">
           <span class="app-badge badge-ai">AI</span>
 
-          <div class="card-title mb-2">Sudoku Server With Coach</div>
+          <div class="card-title mb-1">Sudoku Server With Coach</div>
+          <div class="app-language mb-2">Python • Application Logic • Validation</div>
 
           <div class="card-body-text">
-            Python Sudoku engine with structured validation and coaching-style guidance.
-            Built for clean state management, rule enforcement, and scalable logic separation.
+            A Python-based application that combines structured validation, coaching-style guidance,
+            and clean logic separation. Built to demonstrate problem solving, application architecture,
+            and user-focused engineering through an interactive rules-driven experience.
           </div>
 
           <div class="app-meta mt-3">
@@ -100,22 +119,22 @@
           </div>
 
           <div class="mt-3 d-flex justify-content-between align-items-center">
-            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <a class="link-soft" href="https://github.com/Danluk1001/Sudoku-Program-With-Coach" target="_blank" rel="noreferrer">View on GitHub →</a>
             <span class="app-importance">High Impact</span>
           </div>
         </div>
       </div>
 
-      <!-- 2) Spider-Scraper -->
       <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="backend utility">
         <div class="glass-card p-4 h-100 app-card">
           <span class="app-badge badge-core">Core</span>
 
-          <div class="card-title mb-2">Spider-Scraper</div>
+          <div class="card-title mb-1">Spider-Scraper</div>
+          <div class="app-language mb-2">Python • Automation • Data Pipelines</div>
 
           <div class="card-body-text">
-            Automation-focused web scraper that extracts paginated blog content and exports
-            structured CSVs for CMS workflows. Emphasizes clean parsing and repeatable pipelines.
+            A Python automation tool that extracts paginated content and exports structured CSV outputs
+            for CMS workflows. Demonstrates data handling, repeatable processing pipelines, and practical backend utility building.
           </div>
 
           <div class="app-meta mt-3">
@@ -125,22 +144,23 @@
           </div>
 
           <div class="mt-3 d-flex justify-content-between align-items-center">
-            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <a class="link-soft" href="https://github.com/Danluk1001/Spider-Scraper" target="_blank" rel="noreferrer">View on GitHub →</a>
             <span class="app-importance">High Value</span>
           </div>
         </div>
       </div>
 
-      <!-- 3) C++ Chess Engine -->
       <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="systems">
         <div class="glass-card p-4 h-100 app-card">
           <span class="app-badge badge-adv">Advanced</span>
 
-          <div class="card-title mb-2">C++ Chess Engine</div>
+          <div class="card-title mb-1">C++ Chess Engine</div>
+          <div class="app-language mb-2">C++ • OOP • Systems Design</div>
 
           <div class="card-body-text">
-            Object-oriented chess engine focused on move validation, board state logic,
-            and clean system design. Highlights algorithmic thinking and systems fundamentals.
+            A systems-focused C++ project built around move validation, board-state management,
+            and object-oriented design. Highlights algorithmic thinking, core programming fundamentals,
+            and clean architectural separation.
           </div>
 
           <div class="app-meta mt-3">
@@ -150,22 +170,22 @@
           </div>
 
           <div class="mt-3 d-flex justify-content-between align-items-center">
-            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <a class="link-soft" href="https://github.com/Danluk1001/cpp-chess-engine" target="_blank" rel="noreferrer">View on GitHub →</a>
             <span class="app-importance">Skill Proof</span>
           </div>
         </div>
       </div>
 
-      <!-- 4) Cannon Game (Android) -->
-      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="mobile">
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="frontend">
         <div class="glass-card p-4 h-100 app-card">
-          <span class="app-badge badge-mobile">Mobile</span>
+          <span class="app-badge badge-mobile">Frontend</span>
 
-          <div class="card-title mb-2">Cannon Game (Android)</div>
+          <div class="card-title mb-1">Cannon Game (Android)</div>
+          <div class="app-language mb-2">Java • Android • Event-Driven UI</div>
 
           <div class="card-body-text">
-            Android app demonstrating interactive gameplay logic and event-driven UI patterns.
-            A strong example of mobile fundamentals and applied OOP.
+            An Android application that demonstrates event-driven UI logic, gameplay interaction,
+            and object-oriented programming fundamentals. A strong example of applying Java to interactive software design.
           </div>
 
           <div class="app-meta mt-3">
@@ -181,16 +201,17 @@
         </div>
       </div>
 
-      <!-- 5) Weather Viewer -->
       <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="backend utility">
         <div class="glass-card p-4 h-100 app-card">
           <span class="app-badge badge-api">API</span>
 
-          <div class="card-title mb-2">Weather Viewer</div>
+          <div class="card-title mb-1">Weather Viewer</div>
+          <div class="app-language mb-2">APIs • JSON • Integration Logic</div>
 
           <div class="card-body-text">
-            App that consumes external API data, parses JSON, and renders user-friendly outputs.
-            Demonstrates API integration, error handling, and clean data flow.
+            An API-connected application that fetches external data, parses JSON responses,
+            and presents structured results in a user-friendly way. Demonstrates integration work,
+            clean data flow, and practical application logic.
           </div>
 
           <div class="app-meta mt-3">
@@ -206,16 +227,17 @@
         </div>
       </div>
 
-      <!-- 6) github-portfolio (this site repo) -->
-      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="utility backend">
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="frontend utility">
         <div class="glass-card p-4 h-100 app-card">
           <span class="app-badge badge-core">Core</span>
 
-          <div class="card-title mb-2">GitHub Portfolio</div>
+          <div class="card-title mb-1">GitHub Portfolio</div>
+          <div class="app-language mb-2">HTML/CSS • Responsive UI • Frontend Systems</div>
 
           <div class="card-body-text">
-            This portfolio site: responsive UI, glass styling system, reusable sections,
-            and GitHub Pages deployment. Built as a clean base to scale into multiple pages.
+            A multi-page portfolio experience built with responsive UI structure, reusable styling patterns,
+            and scalable frontend organization. Designed to showcase UI engineering, clean implementation,
+            and production-ready delivery through GitHub Pages.
           </div>
 
           <div class="app-meta mt-3">
@@ -233,7 +255,6 @@
 
     </div>
 
-    <!-- CTA -->
     <div class="text-center mt-5">
       <a class="btn btn-accent px-5" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">
         View All Repositories
@@ -241,7 +262,6 @@
     </div>
   </main>
 
-  <!-- CONTACT (centered form, like your updated version) -->
   <section id="contact" class="container py-5 pb-5">
     <div class="text-center mb-4">
       <div class="tiny-label text-uppercase">Contact Me</div>
@@ -286,7 +306,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="site-footer container py-4">
     <div class="footer-inner glass-card p-4">
       <div class="row g-3 align-items-center">
@@ -310,7 +329,6 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
           integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
           crossorigin="anonymous"></script>
@@ -319,10 +337,8 @@
           crossorigin="anonymous"></script>
 
   <script>
-    // Year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Optional: filter buttons (works now, you can keep or remove)
     const filterBtns = document.querySelectorAll(".apps-filters [data-filter]");
     const items = document.querySelectorAll(".app-item");
 
@@ -343,7 +359,6 @@
       });
     });
 
-    // Optional: inline success text (no redirect)
     const form = document.querySelector('form[action="https://formspree.io/f/mdalybja"]');
     const statusEl = document.getElementById("form-status");
     if (form && statusEl) {
@@ -371,20 +386,18 @@
       });
     }
 
-    // Desktop: click Work -> jump to featured work on homepage (instead of toggling dropdown)
     document.addEventListener("DOMContentLoaded", () => {
       const workLink = document.querySelector(".nav-item.dropdown > a.nav-link.dropdown-toggle");
       if (!workLink) return;
 
       workLink.addEventListener("click", (e) => {
         if (window.matchMedia("(min-width: 992px)").matches) {
-          // navigate to homepage anchor
           e.preventDefault();
           window.location.href = workLink.getAttribute("href");
         }
       });
     });
   </script>
-<script src="nav.js"></script>  
+  <script src="nav.js"></script>  
 </body>
 </html>

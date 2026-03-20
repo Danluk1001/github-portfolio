@@ -944,3 +944,38 @@ main{
 #bol-work .section-title{
   letter-spacing: -.02em;
 }
+/* ===== Applications page ===== */
+.app-language{
+  color: rgba(86,167,255,.88);
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+.hero-lead{
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.app-card .card-title{
+  font-size: 1.05rem;
+  letter-spacing: -.01em;
+}
+
+.app-card .card-body-text{
+  min-height: 110px;
+}
+
+.app-meta{
+  margin-top: 14px;
+}
+
+.app-tag{
+  font-weight: 500;
+}
+
+@media (max-width: 575px){
+  .app-card .card-body-text{
+    min-height: auto;
+  }
+}
