@@ -828,3 +828,90 @@ main{
   color: rgba(255,255,255,.9);
   backdrop-filter: blur(10px);
 }
+/* ===== UI Engineer positioning polish ===== */
+.hero-lead{
+  max-width: 760px;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.hero-pill-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-pill{
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.10);
+  color: rgba(255,255,255,.82);
+  font-size: .82rem;
+  letter-spacing: .02em;
+  backdrop-filter: blur(10px);
+}
+
+.hero-pill:hover{
+  border-color: rgba(86,167,255,.35);
+  color: rgba(255,255,255,.96);
+}
+
+/* stronger hierarchy */
+.display-title{
+  letter-spacing: -.03em;
+}
+
+.sub-title{
+  font-size: 1.05rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.68);
+}
+
+/* section polish */
+.section-title{
+  letter-spacing: -.02em;
+}
+
+.card-title{
+  font-size: 1.05rem;
+  letter-spacing: -.01em;
+}
+
+/* slightly more premium project cards */
+.project-card,
+.webwork-card,
+.app-card{
+  border: 1px solid rgba(255,255,255,.09);
+}
+
+.project-card .card-body-text,
+.webwork-card .card-body-text{
+  min-height: 96px;
+}
+
+/* improve CTA consistency */
+.btn-accent,
+.btn-outline-soft{
+  border-radius: 999px;
+  padding: .82rem 1.25rem;
+}
+
+/* mobile */
+@media (max-width: 575px){
+  .hero-pill-row{
+    gap: 8px;
+  }
+
+  .hero-pill{
+    font-size: .76rem;
+    padding: 7px 12px;
+  }
+
+  .sub-title{
+    font-size: .92rem;
+  }
+}
