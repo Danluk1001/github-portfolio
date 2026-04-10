@@ -979,3 +979,197 @@ main{
     min-height: auto;
   }
 }
+
+/* ===== Web Work page — premium polish (scoped) ===== */
+body.page-web-work .video-hero__content--tight{
+  max-width: 640px;
+}
+
+body.page-web-work .video-hero__lead{
+  max-width: 580px;
+  line-height: 1.72;
+}
+
+body.page-web-work .video-hero .hero-pill-row{
+  max-width: 580px;
+}
+
+body.page-web-work .webwork-section{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+body.page-web-work .webwork-section-intro{
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.72;
+}
+
+body.page-web-work .webwork-section-focus .webwork-focus-title{
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+body.page-web-work .webwork-focus-body{
+  line-height: 1.72;
+  font-size: 0.97rem;
+}
+
+@media (min-width: 992px){
+  body.page-web-work .webwork-section-focus .col-lg-8{
+    padding-top: 0.15rem;
+  }
+}
+
+body.page-web-work .webwork-framing-strip{
+  border-color: rgba(255,255,255,.11);
+  box-shadow: 0 14px 44px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.07);
+}
+
+body.page-web-work .webwork-framing-strip.glass-card::after{
+  width: 120px;
+  height: 120px;
+  opacity: 0.22;
+}
+
+.framing-strip-heading{
+  font-size: clamp(1.2rem, 2.1vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: rgba(255,255,255,.94);
+}
+
+.framing-strip-body{
+  line-height: 1.72;
+  max-width: 920px;
+}
+
+body.page-web-work .bol-work-row-2{
+  margin-top: 0.5in;
+}
+
+body.page-web-work .project-card,
+body.page-web-work .webwork-card{
+  transition:
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease;
+  border-color: rgba(255,255,255,.11);
+  box-shadow:
+    0 16px 48px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+body.page-web-work .project-card:hover,
+body.page-web-work .webwork-card:hover{
+  transform: translateY(-6px);
+  box-shadow:
+    0 28px 72px rgba(43,120,255,.24),
+    inset 0 1px 0 rgba(255,255,255,.09);
+  border-color: rgba(86,167,255,.24);
+}
+
+body.page-web-work .project-img img,
+body.page-web-work .webwork-img img{
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.page-web-work .project-card:hover .project-img img,
+body.page-web-work .webwork-card:hover .webwork-img img{
+  transform: scale(1.045);
+}
+
+body.page-web-work .project-img,
+body.page-web-work .webwork-img{
+  height: 200px;
+  flex-shrink: 0;
+}
+
+body.page-web-work .project-card .card-body-text,
+body.page-web-work .webwork-card .card-body-text{
+  line-height: 1.68;
+  min-height: 5.25rem;
+}
+
+body.page-web-work .webwork-card .card-body-text{
+  min-height: 6.5rem;
+}
+
+body.page-web-work .work-card-footer{
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding-top: 1rem;
+  margin-top: auto;
+}
+
+body.page-web-work .link-soft--cta{
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 0.9rem;
+  border-bottom-width: 1px;
+  padding-bottom: 3px;
+}
+
+body.page-web-work .webwork-card-tags{
+  gap: 9px;
+  row-gap: 10px;
+  margin-top: 0;
+}
+
+body.page-web-work .webwork-card-tags .app-tag{
+  padding: 5px 11px;
+  font-size: 11.5px;
+  border-color: rgba(255,255,255,.1);
+}
+
+body.page-web-work #featured .section-title,
+body.page-web-work #bol-work .section-title{
+  letter-spacing: -0.028em;
+}
+
+body.page-web-work .webwork-contact-header .section-title{
+  letter-spacing: -0.025em;
+}
+
+body.page-web-work .webwork-contact-card{
+  max-width: 720px;
+  border-color: rgba(255,255,255,.12);
+  box-shadow: 0 18px 52px rgba(0,0,0,.36), inset 0 1px 0 rgba(255,255,255,.07);
+}
+
+body.page-web-work .webwork-contact-form .form-control.form-dark{
+  min-height: 48px;
+  padding: 0.7rem 1rem;
+  line-height: 1.45;
+}
+
+body.page-web-work .webwork-contact-form textarea.form-control.form-dark{
+  min-height: 140px;
+  padding-top: 0.75rem;
+}
+
+body.page-web-work .webwork-contact-form .form-label{
+  margin-bottom: 0.35rem;
+}
+
+body.page-web-work .webwork-contact-submit{
+  padding: 0.92rem 2.25rem;
+  font-weight: 600;
+  box-shadow: 0 14px 38px rgba(43,120,255,.32);
+}
+
+body.page-web-work .webwork-contact-submit:hover{
+  filter: brightness(1.06);
+}
+
+@media (max-width: 575px){
+  body.page-web-work .project-card .card-body-text,
+  body.page-web-work .webwork-card .card-body-text{
+    min-height: 0;
+  }
+
+  body.page-web-work .webwork-section{
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+}
