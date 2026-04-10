@@ -785,6 +785,10 @@ main{
   z-index: 2;
 }
 
+.hero-card-content .hero-pill-row{
+  max-width: 760px;
+}
+
 /* Mobile polish */
 @media (max-width: 991px){
   .hero-media-card{
