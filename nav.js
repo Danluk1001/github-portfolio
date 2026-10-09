@@ -4,7 +4,7 @@ const NAV_HTML = `
 <header class="site-header py-3">
   <nav class="navbar navbar-expand-lg navbar-dark container nav-glass">
     <a class="navbar-brand brand-logo" href="/">
-      <img src="/assets/DM-Logo.png" alt="Daniel Myers Logo">
+      <img src="/assets/brand/DM-Logo.png" alt="Daniel Myers Logo">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -24,6 +24,17 @@ const NAV_HTML = `
           <ul class="dropdown-menu dropdown-menu-dark dropdown-glass">
             <li><a class="dropdown-item" href="/web-work/">Web Work</a></li>
             <li><a class="dropdown-item" href="/applications/">Applications</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/work/jerseystem/"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Case Studies
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-glass">
+            <li><a class="dropdown-item" href="/work/jerseystem/">JerseySTEM</a></li>
+            <li><a class="dropdown-item" href="/work/impact-humanity/">Impact Humanity</a></li>
           </ul>
         </li>
 
