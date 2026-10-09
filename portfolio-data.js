@@ -117,23 +117,3 @@ window.portfolioData.certifications = [
     status: 'expired', skills: ['HubSpot CMS', 'CMS Development']
   }
 ];
-
-// Only records with status: 'approved' are rendered publicly.
-// Add an approved Formspree submission here after reviewing it.
-window.portfolioData.testimonials = [
-  {
-    name: 'Byron Smith', role: 'Client', company: 'TRVLSociety',
-    quote: 'Daniel delivered on time with exceptional polish. The site felt fast, modern, and easy to use.',
-    status: 'approved'
-  },
-  {
-    name: 'Ciemone Sheppard', role: 'Client', company: 'Ciemone Inc.',
-    quote: 'Very professional, responsive, and detail-oriented. The final site was clean and easy for customers to navigate.',
-    status: 'approved'
-  },
-  {
-    name: '5 Star Excursions', role: 'Client', company: '5 Star Excursions',
-    quote: 'Communication was clear and consistent. The design direction matched exactly what we wanted, and updates were fast.',
-    status: 'approved'
-  }
-];

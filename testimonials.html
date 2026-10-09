@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read feedback from Daniel Myers' clients, collaborators, coworkers, and nonprofit partners, or submit a testimonial for review.">
+  <meta name="author" content="Daniel Myers">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1424">
+  <title>Testimonials | Daniel Myers, UI Engineer</title>
+  <link rel="icon" type="image/x-icon" href="/assets/brand/DM-Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body id="top" class="page-testimonials">
+  <a class="visually-hidden-focusable" href="#testimonials-content">Skip to testimonials</a>
+  <div class="bg-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+  <div id="site-nav"></div>
+
+  <main id="testimonials-content">
+    <header class="testimonials-hero container py-4 py-lg-5 text-center">
+      <div class="tiny-label text-uppercase mb-3">Testimonials</div>
+      <h1 class="display-title mb-3">What It's Like <span class="accent">Working With Me</span></h1>
+      <p class="testimonials-hero__subtitle mx-auto mb-0">Feedback from clients, collaborators, and organizations I've had the opportunity to work with.</p>
+    </header>
+
+    <section class="container pb-5" aria-labelledby="approved-testimonials-title">
+      <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
+        <div>
+          <div class="tiny-label text-uppercase mb-2">Approved Feedback</div>
+          <h2 id="approved-testimonials-title" class="section-title mb-0">Shared Experiences</h2>
+        </div>
+        <p class="text-muted-2 small mb-0">Every testimonial is reviewed before it is published.</p>
+      </div>
+      <div class="row g-4 testimonials-grid" data-testimonials-list aria-live="polite">
+        <div class="col-12"><div class="testimonial-empty glass-card p-4">Loading approved testimonials…</div></div>
+      </div>
+    </section>
+
+    <section id="share-experience" class="container py-5" aria-labelledby="share-experience-title">
+      <div class="glass-card testimonial-page-form p-4 p-lg-5">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="tiny-label text-uppercase mb-2">Share Your Experience</div>
+            <h2 id="share-experience-title" class="section-title mb-3">Worked With Me?</h2>
+            <p class="resume-sub">Your feedback can help future clients and teams understand how I collaborate, communicate, and deliver.</p>
+            <div class="testimonial-privacy-note mt-4">
+              <strong>Privacy &amp; moderation</strong>
+              <p class="mb-0">Submissions remain private until approved. I collect only the information shown in this form—no email address is requested or stored. You can request removal of a published testimonial at any time.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <form id="testimonial-form" class="row g-3 needs-validation" novalidate>
+              <input class="testimonial-honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <input type="hidden" name="form_started_at" value="">
+
+              <div class="col-md-6 form-field">
+                <label class="form-label" for="testimonial-name">Full Name <span aria-hidden="true">*</span></label>
+                <input id="testimonial-name" class="form-control form-dark" type="text" name="name" minlength="2" maxlength="80" autocomplete="name" required>
+                <div class="invalid-feedback">Enter your full name (2–80 characters).</div>
+              </div>
+
+              <div class="col-md-6 form-field">
+                <label class="form-label" for="testimonial-organization">Organization / Company <span aria-hidden="true">*</span></label>
+                <input id="testimonial-organization" class="form-control form-dark" type="text" name="organization" minlength="2" maxlength="120" autocomplete="organization" required>
+                <div class="invalid-feedback">Enter an organization or company (2–120 characters).</div>
+              </div>
+
+              <div class="col-md-6 form-field">
+                <label class="form-label" for="testimonial-relationship">Relationship <span aria-hidden="true">*</span></label>
+                <select id="testimonial-relationship" class="form-select form-dark" name="relationship" required>
+                  <option value="" selected disabled>Select a relationship</option>
+                  <option>Client</option>
+                  <option>Coworker</option>
+                  <option>Nonprofit Partner</option>
+                  <option>Collaborator</option>
+                  <option>Other</option>
+                </select>
+                <div class="invalid-feedback">Select your working relationship.</div>
+              </div>
+
+              <div class="col-md-6 form-field">
+                <label class="form-label" for="testimonial-job-title">Job Title <span>(optional)</span></label>
+                <input id="testimonial-job-title" class="form-control form-dark" type="text" name="job_title" maxlength="100" autocomplete="organization-title">
+                <div class="invalid-feedback">Keep the job title under 100 characters.</div>
+              </div>
+
+              <fieldset class="col-12 form-field testimonial-rating-field">
+                <legend class="form-label mb-2">Rating <span aria-hidden="true">*</span></legend>
+                <div class="testimonial-rating-input" aria-label="Choose a rating from 1 to 5 stars">
+                  <input id="rating-5" type="radio" name="rating" value="5" required><label for="rating-5" aria-label="5 stars">★</label>
+                  <input id="rating-4" type="radio" name="rating" value="4"><label for="rating-4" aria-label="4 stars">★</label>
+                  <input id="rating-3" type="radio" name="rating" value="3"><label for="rating-3" aria-label="3 stars">★</label>
+                  <input id="rating-2" type="radio" name="rating" value="2"><label for="rating-2" aria-label="2 stars">★</label>
+                  <input id="rating-1" type="radio" name="rating" value="1"><label for="rating-1" aria-label="1 star">★</label>
+                </div>
+                <div class="invalid-feedback">Choose a rating from 1 to 5 stars.</div>
+              </fieldset>
+
+              <div class="col-12 form-field">
+                <div class="d-flex justify-content-between gap-3">
+                  <label class="form-label" for="testimonial-message">Written Testimonial <span aria-hidden="true">*</span></label>
+                  <span id="testimonial-character-count" class="testimonial-field-help" aria-live="polite">0 / 1,500</span>
+                </div>
+                <textarea id="testimonial-message" class="form-control form-dark" name="testimonial" rows="7" minlength="30" maxlength="1500" placeholder="What did we work on, and what stood out about the experience?" required></textarea>
+                <div class="invalid-feedback">Write between 30 and 1,500 characters.</div>
+              </div>
+
+              <div class="col-12 form-field">
+                <label class="form-label" for="testimonial-linkedin">LinkedIn Profile URL <span>(optional)</span></label>
+                <input id="testimonial-linkedin" class="form-control form-dark" type="url" name="linkedin_url" maxlength="300" inputmode="url" placeholder="https://www.linkedin.com/in/your-profile">
+                <div class="invalid-feedback">Enter a full https://linkedin.com profile URL.</div>
+              </div>
+
+              <div class="col-12 form-field">
+                <div class="form-check testimonial-consent">
+                  <input id="testimonial-consent" class="form-check-input" type="checkbox" name="consent_given" required>
+                  <label class="form-check-label" for="testimonial-consent">I agree to have my name, organization, professional details, and feedback displayed publicly on this portfolio. <span aria-hidden="true">*</span></label>
+                  <div class="invalid-feedback">Consent is required before this testimonial can be submitted.</div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div id="testimonial-turnstile" class="testimonial-turnstile" aria-label="Bot protection"></div>
+              </div>
+
+              <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                <button type="submit" class="btn btn-accent px-4">Submit for Review</button>
+                <div id="testimonial-form-status" class="testimonial-form-status" role="status" aria-live="polite"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="testimonial-contact-title">
+      <div class="glass-card testimonial-contact p-4 p-lg-5 text-center">
+        <div class="tiny-label text-uppercase mb-2">Contact</div>
+        <h2 id="testimonial-contact-title" class="section-title mb-3">Have a Question Instead?</h2>
+        <p class="text-muted-2 mb-4">Reach out directly or connect with me professionally.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a class="btn btn-accent" href="mailto:danielx001@gmail.com">Email Daniel</a>
+          <a class="btn btn-outline-soft" href="https://www.linkedin.com/in/daniel-myers-2582611a3/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container pb-4">
+    <div class="footer-inner glass-card p-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-7">
+          <div class="text-muted-2 small">Page made by <span class="fw-semibold">Daniel Myers</span>. <span class="ms-1">© <span id="year"></span> All rights reserved.</span></div>
+          <div class="text-muted-2 small mt-2">Testimonial information is used only for review and approved public display. No email address is collected.</div>
+        </div>
+        <div class="col-md-5 text-md-end">
+          <a class="link-soft small me-3" href="/privacy/">Privacy Policy</a>
+          <a class="link-soft small" href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <script src="/nav.js"></script>
+  <script type="module" src="/testimonials.js"></script>
+  <script src="/stars.js"></script>
+</body>
+</html>

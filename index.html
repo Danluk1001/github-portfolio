@@ -87,7 +87,7 @@
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="/testimonials.html">Testimonials</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item ms-lg-2">
             <a class="btn btn-accent btn-sm px-3" href="#contact">Hire Me</a>
@@ -228,73 +228,22 @@
       <div class="text-center mb-4">
         <div class="tiny-label text-uppercase">Testimonials</div>
         <h2 class="section-title mb-0">What Clients Say</h2>
+        <p class="section-story mb-0 mt-2">Approved feedback from clients, collaborators, and nonprofit partners.</p>
       </div>
 
-      <div class="position-relative testimonials-wrap">
+      <div class="position-relative testimonials-wrap" data-testimonials-carousel>
         <button class="testi-nav testi-prev" type="button" aria-label="Previous testimonial">‹</button>
         <button class="testi-nav testi-next" type="button" aria-label="Next testimonial">›</button>
         <div class="testimonials-viewport">
-          <div class="testimonials-track" id="testimonialsTrack">
-            <!-- Approved testimonials are rendered from portfolio-data.js. -->
+          <div class="testimonials-track" id="testimonialsTrack" data-testimonials-list data-limit="3" aria-live="polite">
+            <div class="testimonial-empty glass-card p-4">Loading approved testimonials…</div>
           </div>
         </div>
       </div>
 
-      <details class="testimonial-submission glass-card mt-4">
-        <summary>
-          <span>
-            <strong>Worked with me?</strong>
-            <small>Share a testimonial about your experience</small>
-          </span>
-          <span class="testimonial-submit-toggle" aria-hidden="true"></span>
-        </summary>
-
-        <div class="testimonial-form-wrap">
-          <div class="testimonial-form-intro">
-            <div class="tiny-label text-uppercase mb-2">Share Your Experience</div>
-            <h3>Your feedback helps future teams understand what it’s like to work with me.</h3>
-            <p>Submissions are reviewed before publication and will never appear automatically.</p>
-          </div>
-
-          <form id="testimonial-form" class="row g-3" action="https://formspree.io/f/mdalybja" method="POST">
-            <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off">
-            <input type="hidden" name="submission_type" value="testimonial">
-            <input type="hidden" name="_subject" value="New testimonial submission for Daniel Myers">
-
-            <div class="col-md-6">
-              <label class="form-label small text-muted-2" for="testimonial-name">Your Name</label>
-              <input id="testimonial-name" class="form-control form-dark" type="text" name="name" autocomplete="name" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label small text-muted-2" for="testimonial-email">Your Email <span>(kept private)</span></label>
-              <input id="testimonial-email" class="form-control form-dark" type="email" name="email" autocomplete="email" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label small text-muted-2" for="testimonial-company">Company or Project</label>
-              <input id="testimonial-company" class="form-control form-dark" type="text" name="company" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label small text-muted-2" for="testimonial-role">Your Role</label>
-              <input id="testimonial-role" class="form-control form-dark" type="text" name="role" placeholder="Founder, Product Manager, Client…">
-            </div>
-            <div class="col-12">
-              <label class="form-label small text-muted-2" for="testimonial-message">Your Testimonial</label>
-              <textarea id="testimonial-message" class="form-control form-dark" name="testimonial" rows="5" minlength="30" maxlength="900" placeholder="What did we work on, and what stood out about the experience?" required></textarea>
-              <div class="testimonial-field-help">30–900 characters. Specific feedback is most helpful.</div>
-            </div>
-            <div class="col-12">
-              <div class="form-check testimonial-consent">
-                <input id="testimonial-consent" class="form-check-input" type="checkbox" name="permission_to_publish" value="Yes" required>
-                <label class="form-check-label" for="testimonial-consent">I give Daniel permission to publish this testimonial with my name, role, and company/project.</label>
-              </div>
-            </div>
-            <div class="col-12 d-flex flex-wrap align-items-center gap-3">
-              <button type="submit" class="btn btn-accent">Submit Testimonial</button>
-              <div class="text-muted-2 small" id="testimonial-form-status" role="status" aria-live="polite"></div>
-            </div>
-          </form>
-        </div>
-      </details>
+      <div class="text-center mt-4">
+        <a class="btn btn-outline-soft" href="/testimonials.html">View All Testimonials &amp; Share Your Experience</a>
+      </div>
     </section>
 
     <!-- CAPABILITIES -->
@@ -405,6 +354,7 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- SERVICES -->
@@ -540,7 +490,7 @@
     <div class="col-12 col-lg-4">
       <div class="glass-card project-card h-100">
         <div class="project-img">
-          <img src="JerseyStem.gif" alt="JerseySTEM website preview">
+          <img src="assets/projects/jerseystem/JerseyStem.gif" alt="JerseySTEM website preview">
         </div>
         <div class="p-4">
           <div class="card-title">JerseySTEM</div>
@@ -559,7 +509,7 @@
     <div class="col-12 col-lg-4">
       <div class="glass-card project-card h-100">
         <div class="project-img">
-          <img class="impact-card-preview" src="assets/projects/impact-humanity/Impact-Humanity-After.png" alt="Impact Humanity redesigned website preview">
+          <img class="impact-card-preview" src="assets/projects/impact-humanity/Impact-humanity.gif" alt="Impact Humanity redesigned website preview">
         </div>
         <div class="p-4">
           <div class="card-title">Impact Humanity</div>
@@ -662,6 +612,52 @@
           </div>
         </div>
       </div>
+
+      <section class="volunteer-experience" aria-labelledby="volunteer-experience-title">
+        <div class="volunteer-experience__intro">
+          <div class="tiny-label text-uppercase mb-2">Volunteer Experience</div>
+          <h3 id="volunteer-experience-title" class="section-title volunteer-experience__title mb-3">Volunteer Leadership &amp; Nonprofit Development</h3>
+          <p class="resume-sub mb-0">Beyond my professional engineering experience, I volunteer my development skills to nonprofit organizations, leading website initiatives, improving digital accessibility, and building sustainable online experiences that support their missions.</p>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6 d-flex">
+            <article class="glass-card volunteer-card p-4 d-flex flex-column flex-fill">
+              <div class="volunteer-card__header">
+                <div class="resume-title">Lead Volunteer Web Developer — JerseySTEM</div>
+                <div class="volunteer-type">Volunteer / Unpaid</div>
+              </div>
+              <p class="resume-sub mt-3 mb-0">Served as the lead volunteer web developer for JerseySTEM, taking ownership of website development and frontend implementation to support the organization's mission of expanding STEM education opportunities. Led the development of responsive WordPress and Elementor pages, created reusable website components, implemented interactive counters and carousels, and refined mobile layouts and user experiences. Worked directly with nonprofit stakeholders to translate design requirements into functional, maintainable web experiences.</p>
+              <ul class="volunteer-skills" aria-label="JerseySTEM skills">
+                <li>Technical Leadership</li>
+                <li>WordPress</li>
+                <li>Elementor</li>
+                <li>UI/UX</li>
+                <li>Responsive Design</li>
+              </ul>
+              <a class="link-soft volunteer-card__link mt-auto" href="https://jerseystem.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit the JerseySTEM website (opens in a new tab)">Visit Website →</a>
+            </article>
+          </div>
+
+          <div class="col-lg-6 d-flex">
+            <article class="glass-card volunteer-card p-4 d-flex flex-column flex-fill">
+              <div class="volunteer-card__header">
+                <div class="resume-title">Primary Volunteer Web Developer — Impact Humanity Inc.</div>
+                <div class="volunteer-type">Volunteer / Unpaid</div>
+              </div>
+              <p class="resume-sub mt-3 mb-0">Served as the primary volunteer web developer for Impact Humanity Inc., independently developing and implementing key sections of the nonprofit's website, including its Home, About, Programs, and Contact pages. Built responsive layouts, interactive image carousels, animated statistics, and program-focused content while improving mobile usability and SEO. Following the website development engagement, the organization expressed interest in retaining me as its long-term web developer, reflecting its confidence in my technical abilities, reliability, and ownership of the project.</p>
+              <ul class="volunteer-skills" aria-label="Impact Humanity skills">
+                <li>Web Development</li>
+                <li>Hostinger</li>
+                <li>UI/UX</li>
+                <li>SEO</li>
+                <li>Stakeholder Collaboration</li>
+              </ul>
+              <a class="link-soft volunteer-card__link mt-auto" href="https://impacthumanitynow.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Impact Humanity website (opens in a new tab)">Visit Website →</a>
+            </article>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- CONTACT -->
@@ -799,46 +795,6 @@
 </script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const track = document.getElementById("testimonialsTrack");
-  if (!track) return;
-
-  const prevBtn = document.querySelector(".testi-prev");
-  const nextBtn = document.querySelector(".testi-next");
-  const slides = Array.from(track.querySelectorAll(".testi-slide"));
-
-  let index = 0;
-
-  const getSlideWidth = () => slides[0].getBoundingClientRect().width;
-  const getGap = () => {
-    const styles = window.getComputedStyle(track);
-    return parseFloat(styles.columnGap || styles.gap || "16");
-  };
-
-  const maxIndex = () => {
-    // how many are visible based on breakpoint
-    const vw = window.innerWidth;
-    const visible = vw <= 575 ? 1 : vw <= 991 ? 2 : 3;
-    return Math.max(0, slides.length - visible);
-  };
-
-  const update = () => {
-    const w = getSlideWidth();
-    const gap = getGap();
-    index = Math.min(Math.max(index, 0), maxIndex());
-    track.style.transform = `translateX(${-index * (w + gap)}px)`;
-    if (prevBtn) prevBtn.disabled = index === 0;
-    if (nextBtn) nextBtn.disabled = index === maxIndex();
-  };
-
-  prevBtn?.addEventListener("click", () => { index -= 1; update(); });
-  nextBtn?.addEventListener("click", () => { index += 1; update(); });
-  window.addEventListener("resize", update);
-
-  update();
-});
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
 
   const animateCounter = (counter) => {
@@ -873,6 +829,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 <script src="portfolio-data.js"></script>
 <script src="portfolio.js"></script>
+<script type="module" src="testimonials.js"></script>
 <script src="stars.js"></script>
 </body>
 </html>
