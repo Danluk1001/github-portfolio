@@ -1,6 +1,8 @@
 import { testimonialsConfig } from "./testimonials-config.js";
 
 const configured = Boolean(testimonialsConfig.supabaseUrl && testimonialsConfig.supabaseAnonKey);
+const TESTIMONIAL_PREVIEW_LENGTH = 250;
+let testimonialSequence = 0;
 
 function createElement(tag, className, text) {
   const node = document.createElement(tag);
@@ -39,6 +41,48 @@ function buildStars(rating) {
   return stars;
 }
 
+function createTestimonialPreview(text, limit = TESTIMONIAL_PREVIEW_LENGTH) {
+  if (text.length <= limit) return text;
+
+  const candidate = text.slice(0, limit + 1);
+  const lastSpace = candidate.lastIndexOf(" ");
+  const cutoff = lastSpace >= Math.floor(limit * 0.8) ? lastSpace : limit;
+  return `${text.slice(0, cutoff).trimEnd()}…`;
+}
+
+function addTestimonialExpansion(card, quote, testimonial) {
+  const fullText = String(testimonial.testimonial || "");
+  if (fullText.length <= TESTIMONIAL_PREVIEW_LENGTH) return;
+
+  testimonialSequence += 1;
+  const safeRecordId = String(testimonial.id || "").replace(/[^a-zA-Z0-9_-]/g, "");
+  quote.id = `testimonial-text-${safeRecordId || testimonialSequence}`;
+  quote.textContent = createTestimonialPreview(fullText);
+  card.classList.add("testimonial-card--expandable");
+
+  const button = createElement("button", "testimonial-expand", "");
+  const label = createElement("span", "testimonial-expand__label", "Read More");
+  const chevron = createElement("span", "testimonial-expand__chevron");
+  chevron.setAttribute("aria-hidden", "true");
+  button.type = "button";
+  button.setAttribute("aria-expanded", "false");
+  button.setAttribute("aria-controls", quote.id);
+  button.setAttribute("aria-label", `Read more of ${testimonial.name}'s testimonial`);
+  button.append(label, chevron);
+
+  button.addEventListener("click", () => {
+    const expanded = button.getAttribute("aria-expanded") === "true";
+    const nextExpanded = !expanded;
+    quote.textContent = nextExpanded ? fullText : createTestimonialPreview(fullText);
+    button.setAttribute("aria-expanded", String(nextExpanded));
+    button.setAttribute("aria-label", `${nextExpanded ? "Read less of" : "Read more of"} ${testimonial.name}'s testimonial`);
+    button.classList.toggle("is-expanded", nextExpanded);
+    label.textContent = nextExpanded ? "Read Less" : "Read More";
+  });
+
+  quote.after(button);
+}
+
 function buildTestimonialCard(testimonial) {
   const card = createElement("article", "glass-card testimonial-card testimonial-card--public p-4 h-100");
   const header = createElement("div", "testimonial-card__header");
@@ -67,6 +111,7 @@ function buildTestimonialCard(testimonial) {
 
   footer.append(identity, meta);
   card.append(header, quote, footer);
+  addTestimonialExpansion(card, quote, testimonial);
   return card;
 }
 
