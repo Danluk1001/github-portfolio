@@ -1,6 +1,6 @@
 # Testimonials system setup
 
-The portfolio reads approved testimonials from Supabase on both `index.html` and `testimonials.html`. New submissions go through a Supabase Edge Function that validates input, verifies Cloudflare Turnstile, applies a three-submissions-per-hour rate limit, and inserts each record with `status = 'pending'`.
+The portfolio reads approved testimonials from Supabase on both the homepage and `testimonials/index.html`. New submissions go through a Supabase Edge Function that validates input, verifies Cloudflare Turnstile, applies a three-submissions-per-hour rate limit, and inserts each record with `status = 'pending'`.
 
 No email address is requested or stored. The browser receives only the Supabase URL, anon key, and Turnstile site key. Never place a Supabase service-role key or Turnstile secret in frontend files.
 
@@ -76,7 +76,7 @@ python -m http.server 4173
 
 Then test:
 
-1. Open `http://localhost:4173/testimonials.html`.
+1. Open `http://localhost:4173/testimonials/`.
 2. Confirm the grid is three columns at large desktop widths, two columns at tablet widths, and one column on mobile.
 3. Confirm only approved rows appear on the dedicated page.
 4. Confirm the homepage loads at most the latest three approved rows.

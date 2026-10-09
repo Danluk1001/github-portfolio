@@ -129,5 +129,5 @@ Deno.serve(async (request) => {
   });
 
   if (error) return jsonResponse({ error: "Submission could not be saved" }, 500, headers);
-  return jsonResponse({ ok: true, message: "Submitted for review" }, 201, headers);
+  return jsonResponse({ ok: true, message: "Submitted" }, 201, headers);
 });
