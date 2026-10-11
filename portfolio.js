@@ -12,7 +12,8 @@
 
   const featuredDescriptions = {
     IBM: 'Generative AI, LLMs, transformers, fine-tuning, RAG, LangChain, Python, Flask, and machine learning.',
-    'Google / Coursera': 'UX research, wireframing, prototyping, usability testing, Figma, Adobe XD, and responsive design.'
+    'Google / Coursera': 'UX research, wireframing, prototyping, usability testing, Figma, Adobe XD, and responsive design.',
+    'HubSpot Academy': 'CMS development, reusable modules, responsive implementation, and production content systems.'
   };
 
   const featuredWrap = element('div', 'featured-certifications');
@@ -41,7 +42,7 @@
   details.append(summary);
 
   const groupsWrap = element('div', 'certification-groups');
-  const categoryOrder = ['AI & Machine Learning', 'UX & Product Design', 'Web Development'];
+  const categoryOrder = ['UX & Product Design', 'Web Development', 'AI & Machine Learning'];
 
   categoryOrder.forEach((category) => {
     const credentials = certifications.filter((credential) => credential.category === category);

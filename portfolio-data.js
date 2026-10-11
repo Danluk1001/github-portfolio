@@ -3,7 +3,7 @@ window.portfolioData = window.portfolioData || {};
 window.portfolioData.certifications = [
   {
     title: 'IBM Generative AI Engineering Specialization', issuer: 'IBM', issueDate: null,
-    credentialId: null, credentialUrl: null, category: 'AI & Machine Learning', featured: true,
+    credentialId: null, credentialUrl: null, category: 'AI & Machine Learning', featured: false,
     status: 'active', skills: ['Generative AI', 'LLMs', 'Transformers', 'RAG', 'LangChain', 'Python', 'Flask']
   },
   {
@@ -113,7 +113,7 @@ window.portfolioData.certifications = [
   },
   {
     title: 'HubSpot CMS for Developers', issuer: 'HubSpot Academy', issueDate: null,
-    credentialId: null, credentialUrl: null, category: 'Web Development', featured: false,
+    credentialId: null, credentialUrl: null, category: 'Web Development', featured: true,
     status: 'expired', skills: ['HubSpot CMS', 'CMS Development']
   }
 ];
