@@ -171,6 +171,80 @@ function initializeCarousel(root) {
   update();
 }
 
+function initializeMobilePageCarousel(root) {
+  const viewport = root.querySelector(".testimonials-page-viewport");
+  const track = root.querySelector(".testimonials-grid");
+  const slides = Array.from(track?.children || []).filter((slide) => !slide.classList.contains("testimonial-empty"));
+  const previous = root.querySelector(".testimonials-page-prev");
+  const next = root.querySelector(".testimonials-page-next");
+  const dots = root.querySelector(".testimonials-page-dots");
+  if (!viewport || !track || !slides.length || !previous || !next || !dots) {
+    root.classList.add("is-empty");
+    return;
+  }
+
+  let currentIndex = 0;
+  let scrollFrame = 0;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const mobileViewport = window.matchMedia("(max-width: 767.98px)");
+  const dotButtons = slides.map((slide, index) => {
+    slide.setAttribute("role", "group");
+    slide.setAttribute("aria-roledescription", "slide");
+    slide.setAttribute("aria-label", `${index + 1} of ${slides.length}`);
+    const dot = createElement("button", "testimonials-page-dot");
+    dot.type = "button";
+    dot.setAttribute("aria-label", `Show testimonial ${index + 1}`);
+    dot.addEventListener("click", () => goTo(index));
+    dots.append(dot);
+    return dot;
+  });
+
+  function updateActive(index) {
+    currentIndex = Math.min(Math.max(index, 0), slides.length - 1);
+    dotButtons.forEach((dot, dotIndex) => {
+      dot.classList.toggle("is-active", dotIndex === currentIndex);
+      dot.setAttribute("aria-current", dotIndex === currentIndex ? "true" : "false");
+    });
+  }
+
+  function goTo(index) {
+    const wrappedIndex = (index + slides.length) % slides.length;
+    updateActive(wrappedIndex);
+    viewport.scrollTo({
+      left: slides[wrappedIndex].offsetLeft - track.offsetLeft,
+      behavior: reduceMotion.matches ? "auto" : "smooth"
+    });
+  }
+
+  viewport.addEventListener("scroll", () => {
+    window.cancelAnimationFrame(scrollFrame);
+    scrollFrame = window.requestAnimationFrame(() => {
+      const viewportCenter = viewport.scrollLeft + viewport.clientWidth / 2;
+      const nearest = slides.reduce((best, slide, index) => {
+        const center = slide.offsetLeft - track.offsetLeft + slide.offsetWidth / 2;
+        return Math.abs(center - viewportCenter) < best.distance
+          ? { index, distance: Math.abs(center - viewportCenter) }
+          : best;
+      }, { index: 0, distance: Number.POSITIVE_INFINITY });
+      updateActive(nearest.index);
+    });
+  }, { passive: true });
+
+  viewport.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault();
+    goTo(currentIndex + (event.key === "ArrowRight" ? 1 : -1));
+  });
+  previous.addEventListener("click", () => goTo(currentIndex - 1));
+  next.addEventListener("click", () => goTo(currentIndex + 1));
+  mobileViewport.addEventListener("change", (event) => {
+    if (!event.matches) viewport.scrollTo({ left: 0, behavior: "auto" });
+    else goTo(currentIndex);
+  });
+  root.classList.toggle("has-no-overflow", slides.length === 1);
+  updateActive(0);
+}
+
 async function loadTestimonials() {
   const containers = Array.from(document.querySelectorAll("[data-testimonials-list]"));
   if (!containers.length) return;
@@ -205,6 +279,8 @@ async function loadTestimonials() {
       container.replaceChildren(fragment);
       const carousel = container.closest("[data-testimonials-carousel]");
       if (carousel) initializeCarousel(carousel);
+      const mobileCarousel = container.closest("[data-mobile-testimonials-carousel]");
+      if (mobileCarousel) initializeMobilePageCarousel(mobileCarousel);
     } catch {
       renderMessage(container, "Testimonials are temporarily unavailable. Please try again later.");
     }

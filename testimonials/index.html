@@ -31,8 +31,17 @@
           <h2 id="approved-testimonials-title" class="section-title mb-0">Shared Experiences</h2>
         </div>
       </div>
-      <div class="row g-4 testimonials-grid" data-testimonials-list aria-live="polite">
-        <div class="col-12"><div class="testimonial-empty glass-card p-4">Loading approved testimonials…</div></div>
+      <div class="testimonials-page-carousel" data-mobile-testimonials-carousel>
+        <div class="testimonials-page-viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Client testimonials">
+          <div class="row g-4 testimonials-grid" data-testimonials-list aria-live="polite">
+            <div class="col-12"><div class="testimonial-empty glass-card p-4">Loading approved testimonials…</div></div>
+          </div>
+        </div>
+        <div class="testimonials-page-controls" aria-label="Testimonial navigation">
+          <button class="testimonials-page-arrow testimonials-page-prev" type="button" aria-label="Previous testimonial">‹</button>
+          <div class="testimonials-page-dots" role="group" aria-label="Choose a testimonial"></div>
+          <button class="testimonials-page-arrow testimonials-page-next" type="button" aria-label="Next testimonial">›</button>
+        </div>
       </div>
     </section>
 
