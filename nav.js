@@ -38,7 +38,16 @@ const NAV_HTML = `
           </ul>
         </li>
 
-        <li class="nav-item"><a class="nav-link" href="/#resume">Resume</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/resume/"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Credentials
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-glass">
+            <li><a class="dropdown-item" href="/resume/">Resume</a></li>
+            <li><a class="dropdown-item" href="/certifications/">Certifications</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link" href="/testimonials/">Testimonials</a></li>
         <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
       </ul>
@@ -69,6 +78,7 @@ function loadNav() {
       const resolved = normalizePath(new URL(href, window.location.href).pathname);
       if (resolved === current) {
         a.classList.add("active");
+        a.closest(".dropdown")?.querySelector(".dropdown-toggle")?.classList.add("active");
       }
     } catch (_) {
       /* ignore */

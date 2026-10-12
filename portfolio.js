@@ -42,7 +42,7 @@
   details.append(summary);
 
   const groupsWrap = element('div', 'certification-groups');
-  const categoryOrder = ['UX & Product Design', 'Web Development', 'AI & Machine Learning'];
+  const categoryOrder = ['UX/UI Design', 'Web Development', 'AI & Python'];
 
   categoryOrder.forEach((category) => {
     const credentials = certifications.filter((credential) => credential.category === category);

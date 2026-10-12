@@ -2252,6 +2252,266 @@ body{
   border-color: rgba(86,167,255,.16);
 }
 
+/* ===== Credentials pages ===== */
+.credentials-hero{
+  max-width: 920px;
+}
+
+.credentials-hero__subtitle{
+  max-width: 760px;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  line-height: 1.7;
+}
+
+.resume-viewer-card{
+  border-color: rgba(86,167,255,.18);
+}
+
+.resume-pdf{
+  display: block;
+  width: 100%;
+  height: min(78vh, 980px);
+  min-height: 600px;
+  border: 0;
+  border-radius: 12px;
+  background: rgba(255,255,255,.04);
+}
+
+.resume-pdf-fallback{
+  min-height: 360px;
+}
+
+.credential-browser{
+  border-color: rgba(86,167,255,.18);
+}
+
+.credential-tools{
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(0, 2fr);
+  align-items: end;
+  gap: 1.25rem;
+}
+
+.credential-search label{
+  display: block;
+  margin-bottom: .5rem;
+  color: rgba(238,245,255,.82);
+  font-size: .78rem;
+  font-weight: 650;
+}
+
+.credential-filters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .55rem;
+}
+
+.credential-filter{
+  padding: .55rem .85rem;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 999px;
+  background: rgba(255,255,255,.035);
+  color: rgba(255,255,255,.72);
+  font: inherit;
+  font-size: .76rem;
+  font-weight: 600;
+  transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.credential-filter:hover,
+.credential-filter.is-active{
+  border-color: rgba(86,167,255,.42);
+  background: rgba(43,120,255,.13);
+  color: #ddecff;
+}
+
+.credential-filter:focus-visible,
+.credential-project-summary:focus-visible{
+  border-radius: 8px;
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.credential-results{
+  color: var(--muted2);
+  font-size: .78rem;
+}
+
+.credential-project-card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-color: rgba(255,255,255,.11);
+}
+
+.credential-project-card.is-expired{
+  border-color: rgba(255,190,100,.25);
+}
+
+.credential-project-summary{
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 100%;
+  cursor: pointer;
+  list-style: none;
+}
+
+.credential-project-summary::-webkit-details-marker{
+  display: none;
+}
+
+.credential-project-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+
+.credential-page-category,
+.credential-page-status{
+  font-size: .62rem;
+  font-weight: 750;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.credential-page-category{
+  color: var(--accent);
+}
+
+.credential-page-status.is-expired{
+  padding: .27rem .48rem;
+  border: 1px solid rgba(255,190,100,.28);
+  border-radius: 999px;
+  background: rgba(255,170,70,.09);
+  color: rgba(255,205,145,.9);
+}
+
+.credential-project-content .card-title{
+  margin-bottom: .75rem;
+  color: rgba(245,249,255,.94);
+  line-height: 1.45;
+}
+
+.credential-project-meta{
+  display: flex;
+  flex-direction: column;
+  gap: .18rem;
+  margin-bottom: 1rem;
+  color: var(--muted2);
+  font-size: .72rem;
+}
+
+.credential-project-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: 0 0 1.1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.credential-details-cue{
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  color: var(--accent);
+  font-size: .82rem;
+  font-weight: 650;
+}
+
+.credential-page-details__body{
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid rgba(255,255,255,.07);
+  padding-top: 1.25rem;
+}
+
+.credential-page-metadata{
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .4rem .7rem;
+  margin: 0 0 .85rem;
+  font-size: .7rem;
+}
+
+.credential-page-metadata dt{
+  color: rgba(255,255,255,.48);
+  font-weight: 500;
+}
+
+.credential-page-metadata dd{
+  margin: 0;
+  color: rgba(255,255,255,.76);
+  overflow-wrap: anywhere;
+}
+
+.credential-page-skills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.credential-page-skills li{
+  padding: .28rem .48rem;
+  border: 1px solid rgba(86,167,255,.13);
+  border-radius: 999px;
+  background: rgba(86,167,255,.055);
+  color: rgba(220,235,252,.7);
+  font-size: .62rem;
+}
+
+.credential-verify{
+  position: relative;
+  z-index: 1;
+  margin-top: 1rem;
+  font-size: .72rem;
+}
+
+.credential-link-unavailable{
+  color: rgba(255,255,255,.42);
+  font-size: .7rem;
+}
+
+.credential-empty{
+  padding: 2rem 1rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 991.98px){
+  .credential-tools{
+    grid-template-columns: 1fr;
+  }
+
+  .credential-filters{
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 575.98px){
+  .resume-pdf{
+    height: 70vh;
+    min-height: 480px;
+  }
+
+  .credential-filters{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .credential-filter{
+    width: 100%;
+  }
+}
+
 @media (max-width: 575.98px){
   .testimonial-card__header,
   .testimonial-card__footer{
@@ -2277,6 +2537,15 @@ body{
   }
 
   .testimonial-card--public:hover{
+    transform: none;
+  }
+
+  .credential-filter,
+  .credential-project-card{
+    transition: none;
+  }
+
+  .credential-project-card:hover{
     transform: none;
   }
 }
