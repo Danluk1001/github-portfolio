@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-67PW6HYJXB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-67PW6HYJXB');
+</script>
+  <meta charset="UTF-8" />
+  <!-- Primary Meta Tags -->
+    <meta name="title" content="Daniel Myers | UI Engineer Portfolio">
+    <meta name="description" content="UI Engineer building scalable, responsive, and accessible interfaces with React, TypeScript, JavaScript, HTML, and CSS, backed by Python APIs and full-stack execution.">
+    <meta name="keywords" content="Daniel Myers, UI Engineer, Frontend Engineer, React Developer, TypeScript Developer, JavaScript Developer, HTML, CSS, Python, Full Stack Support, Portfolio">
+    <meta name="author" content="Daniel Myers">
+    <meta name="robots" content="index, follow">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Theme Color (Mobile Browser Color) -->
+    <meta name="theme-color" content="#0b1424">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Daniel Myers | UI Engineer | Bridging Design and Production">
+    <meta property="og:description" content="UI Engineer specializing in accessible React interfaces and design systems, supported by UX foundations, backend integration, and AI-enabled development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://danluk1001.github.io/github-portfolio/">
+    <meta property="og:image" content="https://danluk1001.github.io/github-portfolio/assets/brand/social-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daniel Myers | UI Engineer | Bridging Design and Production">
+    <meta name="twitter:description" content="UI Engineer specializing in accessible React interfaces and design systems, supported by UX foundations, backend integration, and AI-enabled development.">
+    <meta name="twitter:image" content="https://danluk1001.github.io/github-portfolio/assets/brand/social-preview.png">
+  <title>Daniel Myers | UI Engineer | Bridging Design and Production</title>
+  <link rel="icon" type="image/x-icon" href="assets/brand/DM-Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body id="top">
+  <!-- Top Glow / Background Effects -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="container py-4 py-lg-5">
+      <div class="hero-card glass-card">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+
+            <h1 class="display-title mb-1">
+              <span class="accent">Daniel</span> Myers
+            </h1>
+
+            <div class="sub-title mb-3">UI Engineer | Bridging Design and Production</div>
+
+            <p class="text-muted-2 mb-4">
+              I turn Figma designs into responsive, accessible, production-ready interfaces using React, TypeScript,
+              JavaScript, HTML, and CSS. I focus on reusable component architecture, usability, and maintainable frontend
+              systems, with full-stack development and AI as supporting capabilities behind the interface.
+            </p>
+            <!-- Mobile avatar (shows only on mobile) -->
+                <div class="hero-avatar-mobile my-4">
+                <div class="avatar-stage">
+                  <div class="avatar-orbit avatar-orbit-outer" aria-hidden="true">
+                    <span class="orbit-word orbit-word-react">React</span>
+                    <span class="orbit-word orbit-word-css">CSS</span>
+                  </div>
+                  <div class="avatar-orbit avatar-orbit-inner" aria-hidden="true">
+                    <span class="orbit-word orbit-word-ui">UI</span>
+                  </div>
+                  <div class="avatar-ring">
+                      <img class="avatar-img" src="assets/brand/profile-hero.png" alt="Daniel Myers headshot" />
+                  </div>
+                  <span class="avatar-float-tag avatar-tag-component" aria-hidden="true">&lt;Component /&gt;</span>
+                  <span class="avatar-float-tag avatar-tag-responsive" aria-hidden="true"><i></i> Responsive</span>
+                </div>
+                </div>
+                <div class="hero-pill-row mb-4">
+              <span class="hero-pill">React + TypeScript</span>
+              <span class="hero-pill">Figma to Production</span>
+              <span class="hero-pill">Component Systems</span>
+              <span class="hero-pill">Python API Support</span>
+              <span class="hero-pill">AI-Enabled Development</span>
+            </div>
+            <div class="d-flex flex-wrap gap-3 align-items-center mb-4">
+              <a class="link-soft" href="https://www.linkedin.com/in/daniel-myers-2582611a3/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="link-soft" href="mailto:danielx001@gmail.com">Email</a>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-accent" href="assets/documents/Daniel-Myers-Resume.pdf" target="_blank" rel="noreferrer">
+                Download Resume
+              </a>
+              <a class="btn btn-outline-soft" href="#professional-work">
+                View My Work
+              </a>
+            </div>
+
+            <div class="hero-stats mt-4">
+              <div class="stat">
+                <div class="stat-num counter" data-target="3">0</div>
+                <div class="stat-label">Year of<br />Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num counter" data-target="20" data-suffix="+">0+</div>
+                <div class="stat-label">Certifications</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num counter" data-target="100" data-suffix="%">0%</div>
+                <div class="stat-label">Stakeholder<br />Success</div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 d-flex justify-content-lg-end justify-content-center hero-avatar-desktop">
+            <div class="avatar-stage">
+              <div class="avatar-orbit avatar-orbit-outer" aria-hidden="true">
+                <span class="orbit-word orbit-word-react">React</span>
+                <span class="orbit-word orbit-word-css">CSS</span>
+              </div>
+              <div class="avatar-orbit avatar-orbit-inner" aria-hidden="true">
+                <span class="orbit-word orbit-word-ui">UI</span>
+              </div>
+              <div class="avatar-ring">
+                <img class="avatar-img" src="assets/brand/profile-hero.png" alt="Daniel Myers headshot" />
+              </div>
+              <span class="avatar-float-tag avatar-tag-component" aria-hidden="true">&lt;Component /&gt;</span>
+              <span class="avatar-float-tag avatar-tag-responsive" aria-hidden="true"><i></i> Responsive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROFESSIONAL WORK -->
+    <section id="professional-work" class="container py-5">
+      <div class="text-center section-heading-visual mb-4">
+        <div class="tiny-label text-uppercase">Production UI Engineering</div>
+        <h2 class="section-title mb-0">Featured Professional Work</h2>
+        <p class="section-story mb-0 mt-2">Responsive interfaces delivered for nonprofit, business, and agency clients.</p>
+        <div class="section-accent section-accent--browser" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="glass-card project-card h-100">
+            <div class="project-img"><img src="assets/projects/jerseystem/JerseyStem.gif" alt="JerseySTEM website preview"></div>
+            <div class="p-4">
+              <div class="card-title">JerseySTEM</div>
+              <div class="card-body-text"><strong>Problem:</strong> The nonprofit needed a more consistent, mobile-friendly website. <strong>Contribution:</strong> I translated Figma exploration into reusable WordPress and Elementor components, responsive pages, counters, and carousels. <strong>Outcome:</strong> A maintainable production experience with clearer design consistency across screen sizes.</div>
+              <div class="d-flex flex-wrap gap-3 mt-3"><a href="/work/jerseystem/" class="link-soft">View Case Study →</a><a href="https://jerseystem.org/" class="link-soft ms-auto" target="_blank" rel="noopener noreferrer">Visit Site →</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="glass-card project-card h-100">
+            <div class="project-img"><img class="impact-card-preview" src="assets/projects/impact-humanity/Impact-humanity.gif" alt="Impact Humanity redesigned website preview"></div>
+            <div class="p-4">
+              <div class="card-title">Impact Humanity</div>
+              <div class="card-body-text"><strong>Problem:</strong> The organization needed its Figma direction delivered within Hostinger’s platform constraints. <strong>Contribution:</strong> I built responsive pages and interactive elements, optimized imagery, and supported mobile usability and SEO. <strong>Outcome:</strong> A production-ready nonprofit site with a consistent experience across key pages.</div>
+              <div class="d-flex flex-wrap gap-3 mt-3"><a href="/work/impact-humanity/" class="link-soft">View Case Study →</a><a href="https://impacthumanitynow.org/" class="link-soft ms-auto" target="_blank" rel="noopener noreferrer">Visit Site →</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="glass-card project-card h-100">
+            <div class="project-img"><img src="assets/projects/web/project-2.gif" alt="Ciemone Inc. website preview"><span class="cms-pill">WordPress</span></div>
+            <div class="p-4">
+              <div class="card-title">Ciemone Inc.</div>
+              <div class="card-body-text"><strong>Problem:</strong> The business needed a clearer, more trustworthy customer-facing site. <strong>Contribution:</strong> I structured and implemented responsive WordPress layouts with accessible content presentation and consistent navigation. <strong>Outcome:</strong> A polished production website that makes business information easier to find and use.</div>
+              <a href="https://www.ciemoneinc.com/" class="link-soft mt-3 d-inline-block" target="_blank" rel="noopener noreferrer">Visit Site →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="glass-card project-card h-100">
+            <div class="project-img"><img src="assets/projects/web/project-conexiom.gif" alt="Conexiom website preview"><span class="cms-pill">HubSpot</span></div>
+            <div class="p-4">
+              <div class="card-title">Conexiom · Big Orange Lab</div>
+              <div class="card-body-text"><strong>Problem:</strong> A production HubSpot site required responsive updates and reusable CMS patterns. <strong>Contribution:</strong> I supported UI refinements and CMS-driven component implementation with attention to accessibility, consistency, and maintainability. <strong>Outcome:</strong> Cleaner frontend execution within the client’s existing production system.</div>
+              <a href="https://conexiom.com/" class="link-soft mt-3 d-inline-block" target="_blank" rel="noopener noreferrer">Visit Site →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4"><a href="/web-work/" class="btn btn-accent px-4">View All Professional Work</a></div>
+    </section>
+
+    <section id="ui-approach" class="container py-4">
+      <div class="glass-card identity-card p-4 p-lg-5">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <div class="tiny-label text-uppercase mb-2">Positioning</div>
+            <h2 class="section-title mb-0">UI Engineering Approach</h2>
+            <div class="tech-illustration tech-illustration--identity mt-4" aria-hidden="true">
+              <span class="illustration-window"></span>
+              <span class="illustration-component"></span>
+              <span class="illustration-code">&lt;/&gt;</span>
+              <span class="illustration-cursor"></span>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="card-body-text mb-3">
+              I’m strongest where design, usability, and engineering meet. My work centers on building interfaces
+              that are scalable in code, intuitive in use, and polished in execution.
+            </p>
+            <p class="card-body-text mb-0">
+              While frontend is my core lane, I bring full-stack awareness through Python, APIs, and data-driven workflows,
+              which helps me build UI that is not only visually strong, but connected to real application behavior.
+            </p>
+            <div class="identity-progression mt-4" aria-label="Professional capability progression">
+              <span>UX Foundation</span><i aria-hidden="true">→</i>
+              <strong>UI Engineering</strong><i aria-hidden="true">→</i>
+              <span>Full-Stack Expansion</span><i aria-hidden="true">→</i>
+              <span>AI-Enabled Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="container py-5">
+      <div class="text-center mb-4">
+        <div class="tiny-label text-uppercase">Testimonials</div>
+        <h2 class="section-title mb-0">What Clients Say</h2>
+        <p class="section-story mb-0 mt-2">Approved feedback from clients, collaborators, and nonprofit partners.</p>
+      </div>
+
+      <div class="position-relative testimonials-wrap" data-testimonials-carousel>
+        <button class="testi-nav testi-prev" type="button" aria-label="Previous testimonial">‹</button>
+        <button class="testi-nav testi-next" type="button" aria-label="Next testimonial">›</button>
+        <div class="testimonials-viewport">
+          <div class="testimonials-track" id="testimonialsTrack" data-testimonials-list data-limit="3" aria-live="polite">
+            <div class="testimonial-empty glass-card p-4">Loading approved testimonials…</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a class="btn btn-outline-soft" href="/testimonials/">View All Testimonials &amp; Share Your Experience</a>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section id="capabilities" class="container py-5">
+      <div class="text-center section-heading-visual mb-4">
+        <div class="tiny-label text-uppercase">Capabilities</div>
+        <h2 class="section-title mb-0">Technical Skills &amp; Certifications</h2>
+        <div class="section-accent section-accent--system" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="section-kicker mb-2">Certifications</div>
+          <div class="glass-card certification-panel p-4 h-100">
+            <div id="certification-root" aria-live="polite"></div>
+            <noscript>
+              <p class="card-body-text mb-0">Featured credentials include the IBM Generative AI Engineering Specialization and Google UX Design Certificate.</p>
+            </noscript>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="section-kicker mb-2">Technical Skills</div>
+
+          <div class="engineering-workflow glass-card mb-3" aria-label="UI engineering workflow">
+            <span>Design</span>
+            <i aria-hidden="true">→</i>
+            <span>UI Engineering</span>
+            <i aria-hidden="true">→</i>
+            <span>Frontend</span>
+            <i aria-hidden="true">→</i>
+            <span>Accessible UI</span>
+            <i aria-hidden="true">→</i>
+            <span>Production</span>
+            <i aria-hidden="true">→</i>
+            <span>Support</span>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="glass-card skill-card p-4 h-100">
+                <div class="skill-step">01 · Build</div>
+                <div class="card-title">Frontend Foundations</div>
+                <div class="card-body-text">
+                  React, TypeScript, JavaScript, HTML5, and CSS3 for production-ready interface development.
+                </div>
+                <div class="ux-production-path mt-3" aria-label="UX to production workflow">
+                  Figma <i>→</i> Structure <i>→</i> Component <i>→</i> Test <i>→</i> Production UI
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card skill-card p-4 h-100">
+                <div class="skill-step">02 · Systemize</div>
+                <div class="card-title">UI Architecture</div>
+                <div class="card-body-text">
+                  Component-based architecture, reusable UI patterns, design systems, and maintainable frontend structure.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card skill-card p-4 h-100">
+                <div class="skill-step">03 · Adapt</div>
+                <div class="card-title">Responsive &amp; Accessible UI</div>
+                <div class="card-body-text">
+                  Responsive UI development, semantic HTML, accessibility, cross-device quality, and consistent interaction behavior.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card skill-card p-4 h-100">
+                <div class="skill-step">04 · Refine</div>
+                <div class="card-title">Design-to-Code &amp; Performance</div>
+                <div class="card-body-text">
+                  Figma, Adobe XD, performance optimization, usability, visual consistency, and production delivery.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card skill-card p-4 h-100">
+                <div class="skill-step">05 · Support</div>
+                <div class="card-title">Platforms &amp; Integration</div>
+                <div class="card-body-text">
+                  Python, Flask, FastAPI, REST APIs, SQL, WordPress, Elementor, Webflow, and frontend/backend communication.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="glass-card skill-card p-4 h-100 dashed-card">
+                <div class="skill-step">06 · Extend</div>
+                <div class="card-title">AI &amp; Automation</div>
+                <div class="card-body-text">
+                  AI-assisted workflows, automation, Generative AI, LLMs, RAG, LangChain, and AI-powered Python applications.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="container py-5">
+      <div class="text-center section-heading-visual mb-4">
+        <div class="tiny-label text-uppercase">What I Bring</div>
+        <h2 class="section-title mb-0">Capabilities That Support the Interface</h2>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-12 col-lg-4">
+          <div class="glass-card bring-card bring-card--frontend p-4 h-100">
+            <div class="bring-card-visual" aria-hidden="true"><span></span><span></span></div>
+            <div class="card-title">Frontend Architecture</div>
+            <p class="card-body-text mb-3">
+              I build responsive, maintainable interfaces with a focus on component systems,
+              accessibility, performance, and scalable frontend structure.
+            </p>
+            <a class="link-soft" href="#apps-featured">See Work</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="glass-card bring-card bring-card--design p-4 h-100">
+            <div class="bring-card-visual" aria-hidden="true"><span></span><span></span></div>
+            <div class="card-title">Design-to-Code Execution</div>
+            <p class="card-body-text mb-3">
+              I translate Figma and Adobe XD prototypes into polished, accessible experiences
+              with clean implementation across React, TypeScript, JavaScript, HTML, and CSS.
+            </p>
+            <a class="link-soft" href="#professional-work">See Work</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="glass-card bring-card bring-card--backend p-4 h-100">
+            <div class="bring-card-visual" aria-hidden="true"><span></span><span></span></div>
+            <div class="card-title">Full-Stack Support</div>
+            <p class="card-body-text mb-3">
+              I specialize in the interface while supporting Python, Flask, Django, Node.js,
+              databases, APIs, and the integration paths behind real products.
+            </p>
+            <a class="link-soft" href="#resume">See Experience</a>
+          </div>
+        </div>
+      </div>                    
+    </section>
+
+<!-- FEATURED APPLICATIONS -->
+<section id="apps-featured" class="container py-5">
+  <div class="text-center section-heading-visual mb-4">
+    <div class="tiny-label text-uppercase">Additional Engineering Capabilities</div>
+    <h2 class="section-title mb-0">UI &amp; Software Projects</h2>
+    <p class="section-story mb-0 mt-2">Supporting examples of application development, data workflows, tooling, and product-interface execution.</p>
+    <div class="section-accent section-accent--application" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- App 1 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="glass-card project-card h-100">
+        <div class="project-img">
+          <img src="assets/projects/applications/analytics-dashboard.gif" alt="Analytics Dashboard">
+        </div>
+
+        <div class="p-4">
+          <div class="card-title">Analytics Dashboard</div>
+          <div class="card-body-text">
+            A responsive analytics dashboard UI built to transform complex data into a clean, readable, and visually polished experience. Designed to highlight dashboard structure, data hierarchy, and modern interface presentation.
+          </div>
+
+          <a href="https://github.com/Danluk1001/analytics-dashboard" class="link-soft mt-3 d-inline-block">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- App 2 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="glass-card project-card h-100">
+        <div class="project-img">
+          <img src="assets/projects/applications/app-2.gif" alt="Spider-Scraper">
+        </div>
+
+        <div class="p-4">
+          <div class="card-title">Spider-Scraper</div>
+          <div class="card-body-text">
+            A desktop web-scraping application built with Python and Tkinter. It organizes crawled content through structured previews, screenshot tools, sitemap generation, detailed request logs, and XML or HTML export workflows.
+          </div>
+
+          <a href="https://github.com/Danluk1001/Spider-Scraper" class="link-soft mt-3 d-inline-block">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- App 3 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="glass-card project-card h-100">
+        <div class="project-img">
+          <img src="assets/projects/applications/project-management-workspace.gif" alt="Project Management Workspace">
+        </div>
+
+        <div class="p-4">
+          <div class="card-title">Project Management Workspace</div>
+          <div class="card-body-text">
+            A project management workspace UI built for task organization, team visibility, and productivity-focused workflows. Designed to showcase layout clarity, scalable interface structure, and modern UI engineering patterns.
+          </div>
+
+          <a href="https://github.com/Danluk1001/project-management-board" class="link-soft mt-3 d-inline-block">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-4">
+    <a class="btn btn-accent px-4" href="/applications/">View All Applications</a>
+  </div>
+</section>
+
+    <!-- RESUME -->
+    <section id="resume" class="container py-5">
+      <div class="text-center section-heading-visual mb-4">
+        <div class="tiny-label text-uppercase">Resume</div>
+        <h2 class="section-title mb-0">Education &amp; UI Engineering Experience</h2>
+        <p class="section-story mb-0 mt-2">A progression from computer science foundations to production UI ownership.</p>
+        <div class="section-accent section-accent--timeline" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <div class="section-kicker mb-3">Education</div>
+
+            <div class="resume-block">
+              <div class="resume-dates">2017 — 2025</div>
+              <div class="resume-title">Computer Science B.A., Mathematics Minor</div>
+              <div class="resume-sub">Rutgers University — Newark, NJ</div>
+            </div>
+
+            <hr class="soft-hr" />
+
+            <div class="resume-block">
+              <div class="resume-dates">2019 — 2024</div>
+              <div class="resume-title">Additional Coursework / Projects</div>
+              <div class="resume-sub">Full-stack development, algorithms, databases, and automation projects</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <div class="resume-block">
+              <div class="resume-dates accent">Jun 2023 — Present</div>
+              <div class="resume-title">UI Engineer — Big Orange Lab</div>
+              <div class="resume-sub">
+                Led responsive interface implementation, built production-ready UI patterns,
+                improved frontend performance, and supported CMS and API-connected workflows
+                across client-facing digital experiences.
+              </div>
+            </div>
+            <hr class="soft-hr"/>
+            <div class="resume-block">
+        <div class="resume-dates">Feb 2021 — Jun 2023</div>
+        <div class="resume-title">UI Engineer — Rob Brown Consulting Inc.</div>
+        <div class="resume-sub">
+            Owned client-facing UI implementation across responsive web projects,
+            shaping frontend experiences while supporting backend integrations,
+            content workflows, and performance-minded delivery.
+        </div>
+        </div>
+            <hr class="soft-hr" />
+
+            <div class="resume-block">
+              <div class="resume-dates">Oct 2021 — Dec 2021</div>
+              <div class="resume-title">Software Development Intern — PruTech Solutions, Inc.</div>
+              <div class="resume-sub">
+                Supported software quality, testing, and maintainability across internal tools, contributing to backend logic, debugging workflows, and clearer user-facing functionality.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="volunteer" class="container py-5 volunteer-experience" aria-labelledby="volunteer-experience-title">
+        <div class="volunteer-experience__intro">
+          <div class="tiny-label text-uppercase mb-2">Volunteer Experience</div>
+          <h3 id="volunteer-experience-title" class="section-title volunteer-experience__title mb-3">Volunteer Leadership &amp; Nonprofit Development</h3>
+          <p class="resume-sub mb-0">Beyond my professional engineering experience, I volunteer my development skills to nonprofit organizations, leading website initiatives, improving digital accessibility, and building sustainable online experiences that support their missions.</p>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6 d-flex">
+            <article class="glass-card volunteer-card p-4 d-flex flex-column flex-fill">
+              <div class="volunteer-card__header">
+                <div class="resume-title">Lead Volunteer Web Developer — JerseySTEM</div>
+                <div class="volunteer-type">Volunteer</div>
+              </div>
+              <p class="resume-sub mt-3 mb-0">Served as the lead volunteer web developer for JerseySTEM, taking ownership of website development and frontend implementation to support the organization's mission of expanding STEM education opportunities. Led the development of responsive WordPress and Elementor pages, created reusable website components, implemented interactive counters and carousels, and refined mobile layouts and user experiences. Worked directly with nonprofit stakeholders to translate design requirements into functional, maintainable web experiences.</p>
+              <ul class="volunteer-skills" aria-label="JerseySTEM skills">
+                <li>Technical Leadership</li>
+                <li>WordPress</li>
+                <li>Elementor</li>
+                <li>UI/UX</li>
+                <li>Responsive Design</li>
+              </ul>
+              <a class="link-soft volunteer-card__link mt-auto" href="https://jerseystem.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit the JerseySTEM website (opens in a new tab)">Visit Website →</a>
+            </article>
+          </div>
+
+          <div class="col-lg-6 d-flex">
+            <article class="glass-card volunteer-card p-4 d-flex flex-column flex-fill">
+              <div class="volunteer-card__header">
+                <div class="resume-title">Primary Volunteer Web Developer — Impact Humanity Inc.</div>
+                <div class="volunteer-type">Volunteer</div>
+              </div>
+              <p class="resume-sub mt-3 mb-0">Served as the primary volunteer web developer for Impact Humanity Inc., independently developing and implementing key sections of the nonprofit's website, including its Home, About, Programs, and Contact pages. Built responsive layouts, interactive image carousels, animated statistics, and program-focused content while improving mobile usability and SEO. Following the website development engagement, the organization expressed interest in retaining me as its long-term web developer, reflecting its confidence in my technical abilities, reliability, and ownership of the project.</p>
+              <ul class="volunteer-skills" aria-label="Impact Humanity skills">
+                <li>Web Development</li>
+                <li>Hostinger</li>
+                <li>UI/UX</li>
+                <li>SEO</li>
+                <li>Stakeholder Collaboration</li>
+              </ul>
+              <a class="link-soft volunteer-card__link mt-auto" href="https://impacthumanitynow.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Impact Humanity website (opens in a new tab)">Visit Website →</a>
+            </article>
+          </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container py-5 pb-5">
+      <div class="text-center section-heading-visual mb-4">
+        <div class="tiny-label text-uppercase">Contact Me</div>
+        <h2 class="section-title mb-0">Let’s Work Together</h2>
+        <p class="section-story mb-0 mt-2">Let’s turn thoughtful product direction into a dependable interface.</p>
+        <div class="section-accent section-accent--collaboration" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="glass-card p-4 p-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <form id="contact-form" class="row g-3" action="https://formspree.io/f/mdalybja" method="POST">
+                <!-- Honeypot spam field (hidden) -->
+                <input type="text" name="_gotcha" style="display:none">
+
+                <div class="col-md-6">
+                    <label class="form-label small text-muted-2">Your Name</label>
+                    <input class="form-control form-dark" type="text" name="name" placeholder="Jane Doe" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label small text-muted-2">Your Email</label>
+                    <input class="form-control form-dark" type="email" name="email" placeholder="jane@email.com" required>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label small text-muted-2">Subject</label>
+                    <input class="form-control form-dark" type="text" name="subject" placeholder="Project idea…" required>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label small text-muted-2">Message</label>
+                    <textarea class="form-control form-dark" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="New message from DanielMyers.dev">
+
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-accent px-5">Send Message</button>
+                    <div class="text-muted-2 small mt-2" id="form-status"></div>
+                </div>
+                </form>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+<footer class="site-footer container py-4">
+  <div class="footer-inner glass-card p-4">
+    <div class="row g-3 align-items-center">
+      <div class="col-md-7">
+        <div class="text-muted-2 small">
+          Page made by <span class="fw-semibold">Daniel Myers</span>.
+          <span class="ms-1">© <span id="year"></span> All rights reserved.</span>
+        </div>
+
+        <div class="text-muted-2 small mt-2">
+          I only use information submitted through this site to respond to your message.
+          I do not sell, rent, or share your personal information.
+        </div>
+      </div>
+
+      <div class="col-md-5 text-md-end">
+        <a class="link-soft small me-3" href="/privacy/">Privacy Policy</a>
+        <a class="link-soft small" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+<script src="nav.js"></script>
+<script>
+  const form = document.getElementById("contact-form");
+  const statusEl = document.getElementById("form-status");
+
+  if (form && statusEl) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      statusEl.textContent = "Sending...";
+
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+
+        if (res.ok) {
+          statusEl.textContent = "✅ Sent! I’ll get back to you soon.";
+          form.reset();
+        } else {
+          statusEl.textContent = "❌ Something went wrong. Try again.";
+        }
+      } catch {
+        statusEl.textContent = "❌ Network error. Try again.";
+      }
+    });
+  }
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  const animateCounter = (counter) => {
+    const target = Number(counter.dataset.target || 0);
+    const suffix = counter.dataset.suffix || "";
+    const duration = 1200;
+    const startTime = performance.now();
+
+    const step = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const value = Math.round(target * progress);
+
+      counter.textContent = `${value}${suffix}`;
+
+      if (progress < 1) requestAnimationFrame(step);
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+
+  counters.forEach((counter) => observer.observe(counter));
+});
+</script>
+<script src="portfolio-data.js"></script>
+<script src="portfolio.js"></script>
+<script type="module" src="testimonials.js"></script>
+<script src="stars.js"></script>
+</body>
+</html>

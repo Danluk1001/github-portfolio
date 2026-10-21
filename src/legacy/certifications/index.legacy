@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Daniel Myers' UX design, web development, AI, and Python certifications.">
+  <meta name="author" content="Daniel Myers">
+  <meta name="theme-color" content="#0b1424">
+  <title>Certifications | Daniel Myers, UI Engineer</title>
+  <link rel="icon" type="image/x-icon" href="/assets/brand/DM-Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body id="top" class="page-credentials">
+  <a class="visually-hidden-focusable" href="#certifications-content">Skip to certifications</a>
+  <div class="bg-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+  <div id="site-nav"></div>
+
+  <main id="certifications-content">
+    <header class="credentials-hero container py-4 py-lg-5 text-center">
+      <div class="tiny-label text-uppercase mb-3">Credentials</div>
+      <h1 class="display-title mb-3">Professional <span class="accent">Certifications</span></h1>
+      <p class="credentials-hero__subtitle mx-auto mb-0">A growing set of credentials spanning user experience design, web development, generative AI, machine learning, and Python.</p>
+    </header>
+
+    <section class="container pb-5" aria-labelledby="all-credentials-title">
+      <div class="glass-card credential-browser p-3 p-md-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3 mb-4">
+          <div>
+            <div class="tiny-label text-uppercase mb-2">Credential Library</div>
+            <h2 id="all-credentials-title" class="section-title mb-0">All Certifications</h2>
+          </div>
+          <p id="credential-results" class="credential-results mb-0" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="credential-tools mb-4">
+          <div class="credential-search">
+            <label for="credential-search">Search certifications</label>
+            <input id="credential-search" class="form-control form-dark" type="search" placeholder="Search by title, issuer, or skill" autocomplete="off">
+          </div>
+          <div class="credential-filters" role="group" aria-label="Filter certifications by category">
+            <button class="credential-filter is-active" type="button" data-category="All" aria-pressed="true">All</button>
+            <button class="credential-filter" type="button" data-category="UX/UI Design" aria-pressed="false">UX/UI Design</button>
+            <button class="credential-filter" type="button" data-category="Web Development" aria-pressed="false">Web Development</button>
+            <button class="credential-filter" type="button" data-category="AI &amp; Python" aria-pressed="false">AI &amp; Python</button>
+          </div>
+        </div>
+
+        <div id="credential-list" class="row g-4"></div>
+        <p id="credential-empty" class="credential-empty mb-0" hidden>No certifications match your search and filter.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container pb-4">
+    <div class="footer-inner glass-card p-4 d-flex flex-column flex-md-row justify-content-between gap-3">
+      <div class="text-muted-2 small">© <span id="year"></span> Daniel Myers. All rights reserved.</div>
+      <div><a class="link-soft small me-3" href="/resume/">Resume</a><a class="link-soft small" href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  <script src="/nav.js"></script>
+  <script src="/portfolio-data.js"></script>
+  <script src="/certifications.js"></script>
+  <script src="/stars.js"></script>
+</body>
+</html>

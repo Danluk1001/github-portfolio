@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Impact Humanity case study by Daniel Myers: translating a Figma redesign into a responsive, optimized, SEO-ready Hostinger website.">
+  <title>Impact Humanity Case Study | Daniel Myers, UI Engineer</title>
+  <link rel="icon" type="image/x-icon" href="/assets/brand/DM-Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body id="top" class="page-case-study page-impact-humanity">
+  <a class="visually-hidden-focusable" href="#case-study-content">Skip to case study</a>
+  <div class="bg-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+  <div id="site-nav"></div>
+
+  <aside class="case-study-rail" aria-label="Case study sections">
+    <div class="case-study-rail__label" title="Drag to move · Double-click to reset">Case Study <span aria-hidden="true">⋮⋮</span></div>
+    <nav>
+      <a href="#starting-point">Starting Point</a><a href="#design-first">Design First</a><a href="#production">Production</a><a href="#constraints">Constraints</a><a href="#brand">Brand</a><a href="#responsive">Responsive</a><a href="#adaptability">Adaptability</a><a href="#performance">Performance</a><a href="#seo">SEO</a><a href="#transformation">Transformation</a><a href="#delivery">Delivery</a><a href="#reflection">Reflection</a>
+    </nav>
+  </aside>
+
+  <main id="case-study-content">
+    <header class="case-hero impact-hero container py-4 py-lg-5">
+      <div class="glass-card case-hero__panel impact-hero__panel p-4 p-lg-5">
+        <div class="case-hero__topline mb-4">
+          <nav class="case-breadcrumb" aria-label="Breadcrumb"><a href="/#web-work">Work</a><span aria-hidden="true">/</span><span>Impact Humanity</span></nav>
+          <img class="case-hero__logo impact-logo" src="/assets/projects/impact-humanity/logo.png" alt="Impact Humanity logo">
+        </div>
+        <div class="row g-5 align-items-end">
+          <div class="col-lg-8">
+            <div class="tiny-label text-uppercase mb-3">UI Engineering Case Study · 2026</div>
+            <h1 class="case-title impact-title mb-4">Impact<br><span>Humanity</span></h1>
+            <p class="case-subtitle mb-0">Designing a modern nonprofit experience beyond the limits of a website builder.</p>
+            <a class="btn btn-accent case-site-link mt-4" href="https://impacthumanitynow.org/" target="_blank" rel="noopener noreferrer">Visit Live Site <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-lg-4">
+            <p class="case-intro mb-0">I defined the experience in Figma first, then learned an unfamiliar production platform and adapted the implementation without abandoning the design intent.</p>
+          </div>
+        </div>
+        <dl class="case-metadata impact-metadata mt-5 mb-0">
+          <div><dt>Role</dt><dd>UI Engineer / Web Developer</dd></div><div><dt>Timeline</dt><dd>Jul 27 – Sep 8, 2026</dd></div><div><dt>Platform</dt><dd>Hostinger Website Builder</dd></div><div><dt>Design</dt><dd>Figma</dd></div><div><dt>Focus</dt><dd>UI Engineering · Responsive Design · SEO</dd></div>
+        </dl>
+      </div>
+      <figure class="case-media case-media--actual impact-hero__media">
+        <button class="case-lightbox-trigger" type="button" aria-label="View the completed Impact Humanity website at full size"><img src="/assets/projects/impact-humanity/Impact-Humanity-After.png" alt="Completed Impact Humanity homepage with a community hero, mission content, impact statistics, and donation call to action"></button>
+        <figcaption>Impact Humanity · Finished production homepage</figcaption>
+      </figure>
+    </header>
+
+    <section id="starting-point" class="case-section container" aria-labelledby="starting-title">
+      <div class="case-section__grid"><div class="case-heading"><div class="tiny-label text-uppercase">The Starting Point</div><h2 id="starting-title">A Website Ready for Its Next Chapter</h2></div><div class="case-copy"><p>Impact Humanity had evolved, and its website needed to reflect that growth. I began by reviewing the existing experience—its content, visual language, page structure, and established brand—before deciding what should change.</p><p>The opportunity was to introduce stronger hierarchy, modernize the presentation, and make the experience work more cohesively across devices without disconnecting it from the organization people already recognized.</p></div></div>
+      <figure class="case-media impact-before mt-5"><button class="case-lightbox-trigger" type="button" aria-label="View the original Impact Humanity website at full size"><img src="/assets/projects/impact-humanity/Impact-Humanity-Before.png" alt="Original Impact Humanity website before the redesign"></button><figcaption><strong>Before</strong><small>The website at the start of the project · View full image</small></figcaption></figure>
+    </section>
+
+    <section id="design-first" class="case-section container" aria-labelledby="design-first-title">
+      <div class="impact-editorial-grid"><div class="case-heading"><div class="tiny-label text-uppercase">Design First</div><h2 id="design-first-title">Before Touching Hostinger, I Designed the Experience</h2><div class="case-copy mt-4"><p>I did not let an unfamiliar builder define the design before I understood what the organization needed. I worked in Figma first, using Impact Humanity’s existing brand guidelines to establish the visual target for production.</p><p>The mockup brought layout, hierarchy, typography, spacing, imagery, calls to action, and cross-page consistency into one direction. Responsive behavior was part of that thinking from the beginning—not an adjustment reserved for the end.</p></div></div>
+        <figure class="case-media impact-figma-frame"><span class="impact-node impact-node--one" aria-hidden="true"></span><span class="impact-node impact-node--two" aria-hidden="true"></span><button class="case-lightbox-trigger" type="button" aria-label="View the complete Impact Humanity Figma redesign"><img src="/assets/projects/impact-humanity/Impact-Humanity-Figma.png" alt="Complete Figma redesign for the Impact Humanity homepage"></button><figcaption><strong>Figma Direction</strong><small>The experience defined before implementation · View full image</small></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="production" class="case-section container" aria-labelledby="production-title">
+      <div class="case-section__grid"><div class="case-heading"><div class="tiny-label text-uppercase">From Figma to Hostinger</div><h2 id="production-title">Then Came the Hard Part: Building It</h2></div><div class="case-copy"><p>I received access to Hostinger on August 1. It was my first time using Hostinger Website Builder, but the project was already moving. I learned the production environment while actively translating the approved direction into a working multi-page website.</p><p>Feedback and access shaped the schedule alongside two other active projects. The work moved from initial review, to a completed Figma direction, through final stakeholder feedback, and into production in just over six weeks.</p></div></div>
+      <ol class="impact-timeline" aria-label="Impact Humanity project timeline"><li><time datetime="2026-07-27">Jul 27</time><span>Project begins</span></li><li><time datetime="2026-08-01">Aug 1</time><span>Hostinger access</span></li><li><time datetime="2026-08-22">Aug 22</time><span>Figma finalized</span></li><li><time datetime="2026-09-05">Sep 5</time><span>Final feedback</span></li><li><time datetime="2026-09-08">Sep 8</time><span>Production complete</span></li></ol>
+    </section>
+
+    <section id="constraints" class="case-section container" aria-labelledby="constraints-title">
+      <div class="case-heading case-heading--wide"><div class="tiny-label text-uppercase">Designing Beyond the Builder</div><h2 id="constraints-title">The Design Wanted Full Width. Hostinger Didn’t.</h2></div>
+      <div class="case-copy case-copy--lead"><p>Some compositions in the Figma direction depended on continuous, full-width visual sections. Hostinger’s section structure offered less layout flexibility, and because I was not initially the site owner, custom-code access was also limited. Finalizing parts of the implementation required coordination with the organization’s president for the permissions I needed.</p><blockquote>The engineering question became: how can the experience still feel continuous when the platform builds it in separate pieces?</blockquote></div>
+      <div class="impact-constraint-demo mt-5" aria-label="Figma intent compared with Hostinger implementation">
+        <article><figure class="impact-comparison-image"><button class="case-lightbox-trigger" type="button" aria-label="View the intended Figma section design at full size"><img src="/assets/projects/impact-humanity/Intended-Figma-Design.png" alt="Intended Figma design for the Impact Humanity community image gallery section"></button><figcaption class="visually-hidden">Intended Figma design</figcaption></figure><h3>Intended Figma Design</h3><p>A continuous visual field extending cleanly across sections.</p></article>
+        <div class="impact-constraint-arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+        <article><figure class="impact-comparison-image"><button class="case-lightbox-trigger" type="button" aria-label="View the Hostinger implementation at full size"><img src="/assets/projects/impact-humanity/Hostinger-Implementation.png" alt="Implemented Impact Humanity community image gallery section in Hostinger"></button><figcaption class="visually-hidden">Hostinger implementation</figcaption></figure><h3>Hostinger Implementation</h3><p>Matched colors, gradients, imagery, and transitions hide the underlying boundaries.</p></article>
+      </div>
+    </section>
+
+    <section id="brand" class="case-section container" aria-labelledby="brand-title">
+      <div class="impact-brand-panel glass-card p-4 p-lg-5"><div class="impact-brand-mark"><img src="/assets/projects/impact-humanity/logo.png" alt="" aria-hidden="true"></div><div><div class="tiny-label text-uppercase">Working With the Brand</div><h2 id="brand-title">Modernizing the Experience Without Losing the Organization</h2><div class="case-copy mt-4"><p>Impact Humanity already had an identity. My role was to carry it forward, not design over it. I used the established color palette and brand guidance as the foundation for typography, imagery, calls to action, and page-to-page consistency.</p><p>The result feels newer and more structured while remaining recognizable as Impact Humanity.</p></div><div class="impact-swatches" aria-label="Brand color treatment"><span>Existing identity</span><i></i><i></i><i></i><i></i></div></div></div>
+    </section>
+
+    <section id="responsive" class="case-section container" aria-labelledby="responsive-title">
+      <div class="case-section__grid"><div class="case-heading"><div class="tiny-label text-uppercase">Responsive Engineering</div><h2 id="responsive-title">Desktop Was Only Half the Job</h2></div><div class="case-copy"><p>The builder could stack a page automatically, but that did not make every section a considered mobile experience. I reviewed spacing, text wrapping, image sizing, CTA placement, section height, and visual hierarchy individually until the smaller layout felt cohesive.</p></div></div>
+      <details class="case-mobile-disclosure" open><summary><span>View responsive comparison</span><i class="bi bi-chevron-down" aria-hidden="true"></i></summary><div class="impact-responsive-stage">
+        <figure class="case-media impact-responsive-desktop"><button class="case-lightbox-trigger" type="button" aria-label="View the Impact Humanity desktop website"><img src="/assets/projects/impact-humanity/Impact-Humanity-After.png" alt="Impact Humanity finished website on desktop"></button><figcaption><strong>Desktop</strong><small>Wide production composition · View full image</small></figcaption></figure>
+        <div class="impact-responsive-connector" aria-hidden="true"><span></span><i class="bi bi-arrow-right"></i></div>
+        <figure class="case-media impact-responsive-mobile"><button class="case-lightbox-trigger" type="button" aria-label="View the Impact Humanity mobile website"><img src="/assets/projects/impact-humanity/Impact-humanity-mobile.png" alt="Impact Humanity finished website adapted for mobile"></button><figcaption><strong>Mobile</strong><small>Individually refined layout · View full image</small></figcaption></figure>
+      </div></details>
+    </section>
+
+    <section id="adaptability" class="case-section container" aria-labelledby="adaptability-title">
+      <div class="case-section__grid"><div class="case-heading"><div class="tiny-label text-uppercase">Adaptability</div><h2 id="adaptability-title">Solving Visual Problems Outside the Browser</h2></div><div class="case-copy"><p>There were moments when the ideal CSS solution was impractical or inaccessible inside the builder. Instead of forcing Hostinger beyond what it was designed to do, I adjusted specific image assets in Photoshop before bringing them into the website.</p><p>The implementation method changed. The design goal did not. That flexibility helped preserve the intended presentation without turning the platform itself into the focus of the experience.</p></div></div>
+      <div class="impact-method-shift" aria-label="Adaptable implementation workflow"><span><i class="devicon-figma-plain" aria-hidden="true"></i>Design intent</span><i class="bi bi-arrow-right" aria-hidden="true"></i><span><i class="bi bi-image" aria-hidden="true"></i>Asset adjustment</span><i class="bi bi-arrow-right" aria-hidden="true"></i><span><i class="bi bi-window" aria-hidden="true"></i>Builder-ready result</span></div>
+    </section>
+
+    <section id="performance" class="case-section container" aria-labelledby="performance-title">
+      <div class="impact-dual-notes"><article><i class="bi bi-file-earmark-zip" aria-hidden="true"></i><div class="tiny-label text-uppercase">Performance</div><h2 id="performance-title">Good Visuals Still Need to Load Quickly</h2><p>The site relied on substantial imagery, so optimization became part of production. I compressed image assets with TinyPNG before deployment to reduce unnecessary file weight while preserving the visual quality the design depended on.</p></article><article id="seo" aria-labelledby="seo-title"><i class="bi bi-search" aria-hidden="true"></i><div class="tiny-label text-uppercase">SEO &amp; Production Readiness</div><h2 id="seo-title">Building the Site to Be Found</h2><p>I treated SEO as part of finishing the website: meaningful page titles, meta descriptions, supported focus keyphrases, descriptive hierarchy, internal links, working calls to action, optimized imagery, and responsive presentation.</p></article></div>
+      <p class="impact-production-line">The project was not complete when it looked right. It was complete when it functioned as a real production website.</p>
+    </section>
+
+    <section id="transformation" class="case-section container" aria-labelledby="transformation-title">
+      <div class="case-heading case-heading--wide"><div class="tiny-label text-uppercase">From Mockup to Production</div><h2 id="transformation-title">One Design. Three Stages.</h2></div>
+      <details class="case-mobile-disclosure" open><summary><span>View the complete transformation</span><i class="bi bi-chevron-down" aria-hidden="true"></i></summary><div class="impact-transformation" aria-label="Before, Figma, and production comparison">
+        <figure class="case-media"><button class="case-lightbox-trigger" type="button" aria-label="View the original website"><img src="/assets/projects/impact-humanity/Impact-Humanity-Before.png" alt="Original Impact Humanity website"></button><figcaption><b>01</b><strong>Before</strong><small>Understanding the starting point</small></figcaption></figure>
+        <figure class="case-media"><button class="case-lightbox-trigger" type="button" aria-label="View the Figma redesign"><img src="/assets/projects/impact-humanity/Impact-Humanity-Figma.png" alt="Impact Humanity Figma redesign"></button><figcaption><b>02</b><strong>Figma</strong><small>Defining the intended experience</small></figcaption></figure>
+        <figure class="case-media"><button class="case-lightbox-trigger" type="button" aria-label="View the production website"><img src="/assets/projects/impact-humanity/Impact-Humanity-After.png" alt="Finished Impact Humanity production website"></button><figcaption><b>03</b><strong>Production</strong><small>Adapting and shipping the design</small></figcaption></figure>
+      </div></details>
+    </section>
+
+    <section id="delivery" class="case-section container" aria-labelledby="delivery-title"><div class="case-heading case-heading--wide"><div class="tiny-label text-uppercase">What I Delivered</div><h2 id="delivery-title">From Redesign to Working Website</h2></div><ul class="outcomes-list"><li><i class="bi bi-vector-pen" aria-hidden="true"></i><span>Brand-consistent Figma redesign</span></li><li><i class="bi bi-window-stack" aria-hidden="true"></i><span>Multi-page Hostinger implementation</span></li><li><i class="bi bi-devices" aria-hidden="true"></i><span>Responsive layouts and mobile refinement</span></li><li><i class="bi bi-images" aria-hidden="true"></i><span>Optimized production imagery</span></li><li><i class="bi bi-diagram-3" aria-hidden="true"></i><span>Functional navigation and wired CTA links</span></li><li><i class="bi bi-search" aria-hidden="true"></i><span>Page-level SEO and descriptive structure</span></li><li><i class="bi bi-check2-circle" aria-hidden="true"></i><span>Fully functional production website</span></li></ul></section>
+
+    <section id="reflection" class="case-section container" aria-labelledby="reflection-title">
+      <div class="glass-card reflection-panel impact-reflection p-4 p-lg-5"><div class="tiny-label text-uppercase mb-3">Reflection</div><h2 id="reflection-title">What I Took Away</h2><div class="case-copy case-copy--columns"><p>Impact Humanity reinforced something important about UI Engineering: the design environment and the production environment rarely offer the same freedom. My job was not simply to reproduce pixels. It was to understand the intent well enough to preserve the experience when technical constraints changed the implementation.</p><p>I entered the project having never used Hostinger and left having delivered a complete production website with it. The path moved through Figma, platform limitations, responsive decisions, asset optimization, SEO, stakeholder feedback, and final deployment. The result was not only a mockup—it shipped.</p></div><div class="impact-reflection-points"><span>Define the intent</span><span>Learn the platform</span><span>Adapt the method</span><span>Ship the experience</span></div></div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="next-project-title"><div class="case-next"><div><div class="tiny-label text-uppercase">Continue Exploring</div><h2 id="next-project-title">More UI engineering work.</h2></div><div class="d-flex flex-wrap gap-3"><a class="btn btn-outline-soft" href="/work/jerseystem/">JerseySTEM Case Study</a><a class="btn btn-accent" href="/web-work/">Explore More Work →</a></div></div></section>
+  </main>
+
+  <footer class="container pb-4"><div class="glass-card p-4 d-flex flex-column flex-md-row justify-content-between gap-2"><span class="text-muted-2 small">© 2026 Daniel Myers</span><a class="link-soft small" href="#top">Back to top ↑</a></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><script src="/nav.js"></script><script src="/case-study.js"></script><script src="/stars.js"></script>
+</body>
+</html>

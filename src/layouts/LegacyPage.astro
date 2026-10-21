@@ -1,0 +1,29 @@
+---
+import Navigation from '../components/Navigation.jsx';
+
+interface Props {
+  source: string;
+  currentPath: string;
+}
+
+const { source, currentPath } = Astro.props;
+const headHtml = source.match(/<head[^>]*>([\s\S]*?)<\/head>/i)?.[1] ?? '';
+let bodyHtml = source.match(/<body[^>]*>([\s\S]*?)<\/body>/i)?.[1] ?? '';
+
+// Astro owns the shared navigation now. The remaining legacy scripts are kept
+// during this first migration phase so behavior and content remain unchanged.
+bodyHtml = bodyHtml
+  .replace(/<div\s+id=["']site-nav["']\s*><\/div>/i, '')
+  .replace(/<script[^>]+src=["'][^"']*nav\.js["'][^>]*><\/script>/gi, '');
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <Fragment set:html={headHtml} />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <Navigation currentPath={currentPath} />
+    <Fragment set:html={bodyHtml} />
+  </body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="../assets/brand/DM-Logo.png">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-67PW6HYJXB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-67PW6HYJXB');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Application portfolio showcasing Daniel Myers' experience across Python, JavaScript, C++, Java, APIs, automation, UI engineering, and full-stack problem solving.">
+  <meta name="keywords" content="Daniel Myers, Applications, UI Engineer, Full Stack Developer, Python, JavaScript, C++, Java, APIs, Automation, Portfolio">
+
+  <title>Daniel Myers | Engineering Applications</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../style.css" type="text/css" />
+</head>
+
+<body id="top">
+
+  <div id="site-nav"></div>
+
+<section class="container py-4 py-lg-5">
+  <div class="hero-card hero-media-card glass-card">
+    <video class="hero-card-video" autoplay muted loop playsinline>
+      <source src="../assets/media/hero-app-work.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-card-overlay"></div>
+
+    <div class="hero-card-content">
+      <div class="tiny-label text-uppercase mb-2">UI ENGINEERING PORTFOLIO</div>
+
+      <h1 class="display-title mb-2">
+        <span class="accent">Applications</span>
+      </h1>
+
+      <p class="text-muted-2 mb-0 hero-lead">
+        A collection of projects that reflects how I build across the stack — from polished UI concepts and frontend workflows to Python-powered tools, automation, and practical full-stack problem solving.
+      </p>
+
+      <div class="hero-pill-row mt-3 mb-1" aria-label="Focus areas">
+        <span class="hero-pill">UI Projects</span>
+        <span class="hero-pill">React + Frontend</span>
+        <span class="hero-pill">Python Tools</span>
+        <span class="hero-pill">Full-Stack Thinking</span>
+      </div>
+
+      <div class="d-flex flex-wrap gap-2 mt-4 pt-1">
+        <a class="btn btn-accent" href="#apps">Browse Projects</a>
+        <a class="btn btn-outline-soft" href="/">Back Home</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container pb-2">
+  <div class="glass-card p-4 p-lg-5">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-4">
+        <div class="tiny-label text-uppercase mb-2">What This Shows</div>
+        <h2 class="section-title mb-0">UI Engineering + Full-Stack Thinking</h2>
+      </div>
+      <div class="col-lg-8">
+        <p class="card-body-text mb-0">
+          These projects show more than individual tools — they reflect how I think through interface design, user experience, engineering structure, and maintainability across different environments. Together, they highlight my ability to build polished frontends while also supporting backend logic, APIs, automation workflows, and full-stack delivery.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <main class="container py-5" id="apps">
+    <div class="text-center mb-4">
+      <div class="tiny-label text-uppercase">UI ENGINEERING &amp; SOFTWARE DEVELOPMENT</div>
+      <h2 class="section-title mb-0">Selected UI &amp; Full-Stack Projects</h2>
+    </div>
+
+    <div class="apps-filters d-flex flex-wrap gap-2 justify-content-center mb-4">
+      <button class="btn btn-outline-soft btn-sm is-active" data-filter="all" type="button">All</button>
+      <button class="btn btn-outline-soft btn-sm" data-filter="backend" type="button">Backend</button>
+      <button class="btn btn-outline-soft btn-sm" data-filter="frontend" type="button">Frontend</button>
+      <button class="btn btn-outline-soft btn-sm" data-filter="utility" type="button">Utilities</button>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="frontend">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-mobile">Frontend</span>
+
+          <div class="card-title mb-1">Analytics Dashboard</div>
+          <div class="app-language mb-2">React • Dashboard UI • Data Visualization</div>
+
+          <div class="card-body-text">
+            A responsive analytics dashboard interface designed to turn complex information into a clean, readable, and visually polished experience. Built to showcase dashboard hierarchy, card-based layout, filtering patterns, and modern UI engineering decisions.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">React</span>
+            <span class="app-tag">Dashboard UI</span>
+            <span class="app-tag">Data Views</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001/analytics-dashboard" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">UI Focused</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="backend frontend utility">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-core">Core</span>
+
+          <div class="card-title mb-1">Spider-Scraper</div>
+          <div class="app-language mb-2">Python • Tkinter • Data Pipelines</div>
+
+          <div class="card-body-text">
+            A desktop scraping application that combines Python crawling workflows with a Tkinter interface for browsing extracted content. Built to support structured previews, data organization, XML and HTML exports, screenshot tools, progress tracking, and sitemap generation.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">Python</span>
+            <span class="app-tag">Tkinter GUI</span>
+            <span class="app-tag">Beautiful Soup</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001/Spider-Scraper" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">High Value</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="frontend">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-mobile">Frontend</span>
+
+          <div class="card-title mb-1">Project Management Workspace</div>
+          <div class="app-language mb-2">React • Workspace UI • Product Flows</div>
+
+          <div class="card-body-text">
+            A project management workspace UI built for task organization, team coordination, and productivity-focused workflows. Designed to demonstrate scalable layout structure, component reuse, interface clarity, and a modern product-oriented frontend approach.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">React</span>
+            <span class="app-tag">Workspace UI</span>
+            <span class="app-tag">Task Flows</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001/project-management-board" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">Product UI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="frontend">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-mobile">Frontend</span>
+
+          <div class="card-title mb-1">Cannon Game (Android)</div>
+          <div class="app-language mb-2">Java • Android • Event-Driven UI</div>
+
+          <div class="card-body-text">
+            An Android application that demonstrates event-driven UI logic, gameplay interaction,
+            and object-oriented programming fundamentals. A strong example of applying Java to interactive software design.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">Java</span>
+            <span class="app-tag">Android</span>
+            <span class="app-tag">UI Events</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">Foundational</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="backend utility">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-api">API</span>
+
+          <div class="card-title mb-1">Weather Viewer</div>
+          <div class="app-language mb-2">APIs • JSON • Integration Logic</div>
+
+          <div class="card-body-text">
+            An API-connected application that fetches external data, parses JSON responses,
+            and presents structured results in a user-friendly way. Demonstrates integration work,
+            clean data flow, and practical application logic.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">APIs</span>
+            <span class="app-tag">JSON</span>
+            <span class="app-tag">Integration</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001/Weather-Viewer" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">Practical</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 app-item" data-tags="frontend utility">
+        <div class="glass-card p-4 h-100 app-card">
+          <span class="app-badge badge-core">Core</span>
+
+          <div class="card-title mb-1">GitHub Portfolio</div>
+          <div class="app-language mb-2">HTML/CSS • UI Systems • Responsive Frontend</div>
+
+          <div class="card-body-text">
+            A multi-page portfolio experience built with responsive layout systems, reusable styling patterns, and scalable frontend structure. Designed to present my work as a UI Engineer while showing clean implementation and production-ready delivery.
+          </div>
+
+          <div class="app-meta mt-3">
+            <span class="app-tag">HTML/CSS</span>
+            <span class="app-tag">UI Systems</span>
+            <span class="app-tag">Responsive Frontend</span>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <a class="link-soft" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <span class="app-importance">Production</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a class="btn btn-accent px-5" href="https://github.com/Danluk1001" target="_blank" rel="noreferrer">
+        View All Repositories
+      </a>
+    </div>
+  </main>
+
+  <section id="contact" class="container py-5 pb-5">
+    <div class="text-center mb-4">
+      <div class="tiny-label text-uppercase">Contact Me</div>
+      <h2 class="section-title mb-0">Let’s Work Together</h2>
+    </div>
+
+    <div class="glass-card p-4 p-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-8">
+          <form class="row g-3" action="https://formspree.io/f/mdalybja" method="POST">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <div class="col-md-6">
+              <label class="form-label small text-muted-2">Your Name</label>
+              <input class="form-control form-dark" type="text" name="name" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label small text-muted-2">Your Email</label>
+              <input class="form-control form-dark" type="email" name="email" placeholder="jane@email.com" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label small text-muted-2">Subject</label>
+              <input class="form-control form-dark" type="text" name="subject" placeholder="Project idea…" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label small text-muted-2">Message</label>
+              <textarea class="form-control form-dark" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="New message from DanielMyers.dev">
+
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-accent px-5">Send Message</button>
+              <div class="text-muted-2 small mt-2" id="form-status"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer container py-4">
+    <div class="footer-inner glass-card p-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-7">
+          <div class="text-muted-2 small">
+            Page made by <span class="fw-semibold">Daniel Myers</span>.
+            <span class="ms-1">© <span id="year"></span> All rights reserved.</span>
+          </div>
+
+          <div class="text-muted-2 small mt-2">
+            I only use information submitted through this site to respond to your message.
+            I do not sell, rent, or share your personal information.
+          </div>
+        </div>
+
+        <div class="col-md-5 text-md-end">
+          <a class="link-soft small me-3" href="/privacy/">Privacy Policy</a>
+          <a class="link-soft small" href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+          integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+          crossorigin="anonymous"></script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const filterBtns = document.querySelectorAll(".apps-filters [data-filter]");
+    const items = document.querySelectorAll(".app-item");
+
+    function setActive(btn){
+      filterBtns.forEach(b => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const f = btn.dataset.filter;
+        setActive(btn);
+
+        items.forEach(item => {
+          const tags = (item.dataset.tags || "").split(" ");
+          item.style.display = (f === "all" || tags.includes(f)) ? "" : "none";
+        });
+      });
+    });
+
+    const form = document.querySelector('form[action="https://formspree.io/f/mdalybja"]');
+    const statusEl = document.getElementById("form-status");
+    if (form && statusEl) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        statusEl.textContent = "Sending...";
+
+        const data = new FormData(form);
+        try {
+          const res = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: { "Accept": "application/json" }
+          });
+
+          if (res.ok) {
+            statusEl.textContent = "✅ Sent! I’ll get back to you soon.";
+            form.reset();
+          } else {
+            statusEl.textContent = "❌ Something went wrong. Try again.";
+          }
+        } catch {
+          statusEl.textContent = "❌ Network error. Try again.";
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const workLink = document.querySelector(".nav-item.dropdown > a.nav-link.dropdown-toggle");
+      if (!workLink) return;
+
+      workLink.addEventListener("click", (e) => {
+        if (window.matchMedia("(min-width: 992px)").matches) {
+          e.preventDefault();
+          window.location.href = workLink.getAttribute("href");
+        }
+      });
+    });
+  </script>
+  <script src="../nav.js"></script>  
+<script src="../stars.js"></script>
+</body>
+</html>

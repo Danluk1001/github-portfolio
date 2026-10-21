@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JerseySTEM case study by Daniel Myers: UI engineering, responsive design, Figma, WordPress, Elementor, and reusable frontend systems.">
+  <title>JerseySTEM Case Study | Daniel Myers, UI Engineer</title>
+  <link rel="icon" type="image/x-icon" href="/assets/brand/DM-Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body id="top" class="page-case-study">
+  <a class="visually-hidden-focusable" href="#case-study-content">Skip to case study</a>
+  <div class="bg-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+  <div id="site-nav"></div>
+
+  <aside class="case-study-rail" aria-label="Case study sections">
+    <div class="case-study-rail__label" title="Drag to move · Double-click to reset">Case Study <span aria-hidden="true">⋮⋮</span></div>
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#challenge">Challenge</a>
+      <a href="#direction">Direction</a>
+      <a href="#full-figma">Full Figma</a>
+      <a href="#production">Production</a>
+      <a href="#reuse">Reuse</a>
+      <a href="#responsive">Responsive</a>
+      <a href="#accessibility">Accessibility</a>
+      <a href="#scope">Scope</a>
+      <a href="#constraints">Constraints</a>
+      <a href="#ownership">Ownership</a>
+      <a href="#outcomes">Outcomes</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
+  </aside>
+
+  <main id="case-study-content">
+    <header class="case-hero container py-4 py-lg-5">
+      <div class="glass-card case-hero__panel p-4 p-lg-5">
+        <div class="case-hero__topline mb-4">
+          <nav class="case-breadcrumb" aria-label="Breadcrumb"><a href="/#professional-work">Work</a><span aria-hidden="true">/</span><span>JerseySTEM</span></nav>
+          <img class="case-hero__logo" src="/assets/projects/jerseystem/logo.png" alt="JerseySTEM logo">
+        </div>
+        <div class="row g-5 align-items-end">
+          <div class="col-lg-8">
+            <div class="tiny-label text-uppercase mb-3">UI Engineering Case Study · 2026</div>
+            <h1 class="case-title mb-4">Jersey<span class="accent">STEM</span></h1>
+            <p class="case-subtitle mb-0">Redesigning and engineering a scalable digital experience for STEM education.</p>
+            <a class="btn btn-accent case-site-link mt-4" href="https://sandbox.jerseystem.org/" target="_blank" rel="noopener noreferrer">Visit Site →</a>
+          </div>
+          <div class="col-lg-4">
+            <p class="case-intro mb-0">A design-to-production website refresh shaped by evolving requirements, a mobile-heavy audience, and the need for reusable page systems.</p>
+          </div>
+        </div>
+
+        <dl class="case-metadata mt-5 mb-0">
+          <div><dt>Role</dt><dd>UI Engineer</dd></div>
+          <div><dt>Project Type</dt><dd>Nonprofit Website Redesign</dd></div>
+          <div><dt>Responsibilities</dt><dd>UI Engineering · UX/UI Design · Responsive Development</dd></div>
+          <div><dt>Tools</dt><dd>Figma · WordPress · Elementor · HTML · CSS · JavaScript</dd></div>
+          <div><dt>Year</dt><dd>2026</dd></div>
+        </dl>
+      </div>
+      <figure class="case-media case-media--actual case-media--wide">
+        <button class="case-lightbox-trigger" type="button" aria-label="View the current JerseySTEM homepage screenshot at full size">
+          <img src="/assets/projects/jerseystem/current-homepage.png" alt="Current JerseySTEM homepage showing the Building tomorrow's STEM leaders hero and partner organizations">
+        </button>
+        <figcaption>Current JerseySTEM homepage · Production progress</figcaption>
+      </figure>
+    </header>
+
+    <section id="summary" class="case-section container" aria-labelledby="summary-title">
+      <div class="case-section__grid">
+        <div class="case-heading"><div class="tiny-label text-uppercase">Project Summary</div><h2 id="summary-title">Design direction that could survive change.</h2></div>
+        <div class="case-copy">
+          <p>I joined JerseySTEM through Catchafire as a volunteer during an active website refresh. The existing website was outdated, lacked a cohesive visual direction, and needed to be modernized under an aggressive timeline.</p>
+          <p>Using my background in UI engineering, Figma, responsive design, and WordPress, I proposed multiple homepage concepts. The second direction was selected by the team. I learned Elementor while actively developing the project, extended it with frontend code when necessary, and took increasing ownership of page development and reusable structures as the work progressed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge" class="case-section container" aria-labelledby="challenge-title">
+      <div class="case-heading case-heading--wide"><div class="tiny-label text-uppercase">The Challenge</div><h2 id="challenge-title">An outdated website. An evolving project. A tight deadline.</h2></div>
+      <div class="case-copy case-copy--lead">
+        <p>JerseySTEM needed more than a visual refresh. The website contained outdated content, inconsistent presentation, unclear page organization, and sections whose purpose was still being evaluated. Meanwhile, requirements, content, and responsibilities continued to evolve against an aggressive launch timeline.</p>
+        <blockquote>How do you create a modern and consistent digital experience while the content, requirements, and project itself are still changing?</blockquote>
+      </div>
+      <ul class="constraint-list" aria-label="Project constraints">
+        <li>Outdated website</li><li>Aggressive timeline</li><li>Changing requirements</li><li>100+ Jira tickets</li><li>Existing WordPress infrastructure</li><li>Content dependencies</li><li>Team transitions</li><li>Mobile-heavy audience</li>
+      </ul>
+    </section>
+
+    <section id="direction" class="case-section container" aria-labelledby="direction-title">
+      <div class="case-heading case-heading--wide"><div class="tiny-label text-uppercase">Establishing a New Direction</div><h2 id="direction-title">Designing Before Developing</h2></div>
+      <div class="case-copy case-copy--lead"><p>Rather than immediately rebuilding the existing site inside WordPress, I used Figma to explore what a refreshed JerseySTEM experience could become. The concepts focused on hierarchy, calls to action, readability, modern imagery, and a consistent visual system. Stakeholders selected the second direction as the production foundation.</p></div>
+      <details class="case-mobile-disclosure" open>
+        <summary><span>View design progression</span><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
+        <div class="case-process" aria-label="Design-to-production process">
+        <figure class="case-media case-media--process">
+          <button class="case-lightbox-trigger" type="button" aria-label="View the full original JerseySTEM website screenshot">
+            <img src="/assets/projects/jerseystem/original-website.png" alt="Original JerseySTEM website with a dark navy homepage, Get Involved hero, impact statistics, and navigation">
+          </button>
+          <figcaption><strong>Existing Experience</strong><small>Original JerseySTEM website · View full image</small></figcaption>
+        </figure>
+        <figure class="case-media case-media--process">
+          <button class="case-lightbox-trigger" type="button" aria-label="View the JerseySTEM Figma exploration at full size">
+            <img src="/assets/projects/jerseystem/figma-exploration.png" alt="JerseySTEM Figma homepage exploration showing an early redesign concept">
+          </button>
+          <figcaption><strong>Figma Exploration</strong><small>Homepage concept exploration · View full image</small></figcaption>
+        </figure>
+        <figure class="case-media case-media--process">
+          <button class="case-lightbox-trigger" type="button" aria-label="View the selected JerseySTEM design direction at full size">
+            <img src="/assets/projects/jerseystem/selected-direction.png" alt="Selected JerseySTEM homepage design direction created in Figma">
+          </button>
+          <figcaption><strong>Selected Direction</strong><small>Stakeholder-selected second iteration · View full image</small></figcaption>
+        </figure>
+        <figure class="case-media case-media--process">
+          <button class="case-lightbox-trigger" type="button" aria-label="View the JerseySTEM production website at full size">
+            <img src="/assets/projects/jerseystem/production-website.png" alt="JerseySTEM production website showing the implemented responsive homepage">
+          </button>
+          <figcaption><strong>Production Website</strong><small>Implemented website progression · View full image</small></figcaption>
+        </figure>
+        </div>
+      </details>
+    </section>
+
+    <section id="full-figma" class="case-section container" aria-labelledby="full-figma-title">
+      <div class="case-section__grid">
+        <div class="case-heading"><div class="tiny-label text-uppercase">Full Figma Direction</div><h2 id="full-figma-title">Seeing the Experience as One Connected System</h2></div>
+        <div class="case-copy"><p>The complete Figma direction brought the refreshed hierarchy, content rhythm, calls to action, imagery, and reusable visual patterns into one continuous homepage experience before production development began.</p></div>
+      </div>
+      <figure class="case-media case-media--full-design mt-5">
+        <button class="case-lightbox-trigger" type="button" aria-label="View the complete JerseySTEM Figma design at full size">
+          <img src="/assets/projects/jerseystem/full-figma.png" alt="Complete JerseySTEM Figma homepage design showing the full selected visual direction">
+        </button>
+        <figcaption><strong>Complete Figma Design</strong><small>Selected homepage direction · View full image</small></figcaption>
+      </figure>
+    </section>
+
+    <section id="production" class="case-section container" aria-labelledby="production-title">
+      <div class="case-section__grid align-items-center">
+        <div class="case-heading"><div class="tiny-label text-uppercase">From Figma to Production</div><h2 id="production-title">Turning the Design Into a Working System</h2></div>
+        <div class="case-copy"><p>Elementor was new to me when I joined. I applied my existing frontend and responsive-design knowledge while learning the tool during active development. Where the visual editor could not reproduce the intended experience on its own, I extended the implementation with custom CSS, HTML, and JavaScript.</p></div>
+      </div>
+      <ol class="engineering-flow" aria-label="Production technology flow">
+        <li><span>Figma</span><span class="engineering-flow__logos" aria-hidden="true"><i class="devicon-figma-plain colored"></i></span></li>
+        <li><span>WordPress / Elementor</span><span class="engineering-flow__logos" aria-hidden="true"><i class="devicon-wordpress-plain colored"></i><i class="devicon-elementor-plain colored"></i></span></li>
+        <li><span>HTML / CSS / JavaScript</span><span class="engineering-flow__logos" aria-hidden="true"><i class="devicon-html5-plain colored"></i><i class="devicon-css3-plain colored"></i><i class="devicon-javascript-plain colored"></i></span></li>
+        <li><span>Responsive Production Experience</span><span class="engineering-flow__logos" aria-hidden="true"><i class="devicon-chrome-plain colored"></i></span></li>
+      </ol>
+    </section>
+
+    <section id="reuse" class="case-section container" aria-labelledby="reuse-title">
+      <div class="case-section__grid">
+        <div class="case-heading"><div class="tiny-label text-uppercase">Building for Reuse</div><h2 id="reuse-title">One System. Nine Programs.</h2></div>
+        <div class="case-copy"><p>Rather than treating every STEM curriculum area as an independent page, I developed a reusable program-detail structure. Each program could retain distinct content while sharing typography, spacing, navigation, responsive behavior, and visual hierarchy.</p></div>
+      </div>
+      <div class="program-system">
+        <figure class="case-media case-media--program-template">
+          <button class="case-lightbox-trigger" type="button" aria-label="View the reusable artificial intelligence program template at full size">
+            <img src="/assets/projects/jerseystem/program-template-ai.png" alt="JerseySTEM Artificial Intelligence program page used as the reusable program-detail template">
+          </button>
+          <figcaption><strong>Reusable Program Template</strong><small>Artificial Intelligence program page · View full image</small></figcaption>
+        </figure>
+        <div class="program-branches" aria-label="Nine program experiences"><span>AI</span><span>Biology</span><span>Robotics</span><span>Engineering</span><span>Technology</span><span>Science</span><span>Mathematics</span><span>Curriculum 8</span><span>Curriculum 9</span></div>
+      </div>
+    </section>
+
+    <section id="responsive" class="case-section container" aria-labelledby="responsive-title">
+      <div class="case-heading case-heading--wide"><div class="tiny-label text-uppercase">Responsive Design</div><h2 id="responsive-title">Designing for the Audience</h2></div>
+      <div class="case-copy case-copy--lead"><p>Stakeholders indicated that approximately 60% of traffic came from mobile devices, so responsive behavior was a core requirement—not a final pass. Layouts, typography, navigation, cards, imagery, and interactive elements were tested and adjusted across viewports.</p></div>
+      <details class="case-mobile-disclosure" open>
+        <summary><span>View responsive screenshots</span><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
+        <div class="device-showcase">
+        <figure class="case-media case-media--device case-media--desktop">
+          <button class="case-lightbox-trigger" type="button" aria-label="View the JerseySTEM desktop homepage at full size">
+            <img src="/assets/projects/jerseystem/current-homepage.png" alt="JerseySTEM homepage displayed at the desktop breakpoint">
+          </button>
+          <figcaption><strong>Desktop</strong><small>Homepage capture · View full image</small></figcaption>
+        </figure>
+        <figure class="case-media case-media--device case-media--tablet">
+          <button class="case-lightbox-trigger" type="button" aria-label="View the JerseySTEM tablet layout at full size">
+            <img src="/assets/projects/jerseystem/tablet.png" alt="JerseySTEM homepage adapted for a tablet viewport">
+          </button>
+          <figcaption><strong>Tablet</strong><small>Responsive layout capture · View full image</small></figcaption>
+        </figure>
+        <figure class="case-media case-media--device case-media--mobile">
+          <button class="case-lightbox-trigger" type="button" aria-label="View the JerseySTEM mobile layout at full size">
+            <img src="/assets/projects/jerseystem/mobile.png" alt="JerseySTEM homepage adapted for a mobile phone viewport">
+          </button>
+          <figcaption><strong>Mobile</strong><small>Responsive layout capture · View full image</small></figcaption>
+        </figure>
+        </div>
+      </details>
+    </section>
+
+    <section id="accessibility" class="case-section container" aria-labelledby="accessibility-title">
+      <div class="case-section__grid">
+        <div class="case-heading"><div class="tiny-label text-uppercase">Accessibility &amp; Usability</div><h2 id="accessibility-title">Clarity Before Decoration</h2></div>
+        <div class="case-copy"><p>Accessibility and readability influenced typography, sizing, spacing, hierarchy, and responsive behavior. The goal was not simply to make JerseySTEM look newer; it was to make programs, impact, leadership, and opportunities easier to understand and navigate.</p></div>
+      </div>
+      <ul class="principle-grid"><li>Readable typography</li><li>Clear hierarchy</li><li>Mobile legibility</li><li>Consistent calls to action</li><li>Responsive layouts</li><li>Predictable navigation</li></ul>
+    </section>
+
+    <section id="scope" class="case-section container" aria-labelledby="scope-title">
+      <div class="case-heading case-heading--wide"><div class="tiny-label text-uppercase">Project Scope</div><h2 id="scope-title">Expanding Across the Website</h2></div>
+      <div class="scope-grid">
+        <article><h3>Homepage</h3><p>Designed and implemented the refreshed homepage experience.</p></article>
+        <article><h3>About</h3><p>Developed the About experience and supporting content structure.</p></article>
+        <article><h3>Leadership</h3><p>Created patterns for leadership, academic, and technical team members.</p></article>
+        <article><h3>Partners</h3><p>Developed partner presentation with logo and external-link support.</p></article>
+        <article><h3>Programs</h3><p>Created reusable architecture supporting nine curriculum areas.</p></article>
+        <article><h3>Get Involved</h3><p>Built layouts for volunteer, instructor, mentorship, sponsorship, and outreach opportunities.</p></article>
+        <article><h3>Donate</h3><p>Translated sponsorship and donation information into a web experience; payment routing remained with other JerseySTEM teams.</p></article>
+        <article><h3>Contact &amp; Privacy</h3><p>Developed responsive contact and privacy-policy experiences.</p></article>
+        <article><h3>Responsive System</h3><p>Adjusted and tested layouts across desktop, tablet, and mobile.</p></article>
+      </div>
+    </section>
+
+    <section id="constraints" class="case-section container" aria-labelledby="constraints-title">
+      <div class="case-heading case-heading--wide"><div class="tiny-label text-uppercase">Real-World Constraints</div><h2 id="constraints-title">The Design Wasn't the Only Thing Changing</h2></div>
+      <div class="challenge-list">
+        <article><div><span>Challenge</span><h3>New Technology</h3><p>Elementor was new to me when the project began.</p></div><div><span>Response</span><p>I transferred existing frontend and WordPress knowledge into the environment and learned Elementor while delivering production work.</p></div></article>
+        <article><div><span>Challenge</span><h3>Changing Requirements</h3><p>Content and page requirements continued evolving.</p></div><div><span>Response</span><p>I created reusable structures so content could change without redesigning the overall interface.</p></div></article>
+        <article><div><span>Challenge</span><h3>Large Backlog</h3><p>The project included more than 100 Jira tickets, including redundant or outdated items.</p></div><div><span>Response</span><p>Work shifted toward broader page and system priorities rather than isolated tickets.</p></div></article>
+        <article><div><span>Challenge</span><h3>Team Transition</h3><p>Team availability and responsibilities changed during development.</p></div><div><span>Response</span><p>I took increasing ownership while collaborating with stakeholders on content, approvals, and dependencies.</p></div></article>
+      </div>
+    </section>
+
+    <section id="ownership" class="case-section container" aria-labelledby="ownership-title">
+      <div class="case-section__grid"><div class="case-heading"><div class="tiny-label text-uppercase">Growing Ownership</div><h2 id="ownership-title">From Volunteer Contributor to Leading Page Development</h2></div><div class="case-copy"><p>My involvement expanded as the project progressed. After proposing the new visual direction and beginning implementation, I became increasingly responsible for major pages and reusable structures. As availability changed, I led page development while other contributors moved into advisory and supporting roles.</p></div></div>
+      <ol class="ownership-flow">
+        <li><i class="bi bi-code-square" aria-hidden="true"></i><span>Volunteer UI Engineer</span></li>
+        <li><i class="bi bi-vector-pen" aria-hidden="true"></i><span>Design Contributor</span></li>
+        <li><i class="bi bi-window-stack" aria-hidden="true"></i><span>Primary Page Developer</span></li>
+        <li><i class="bi bi-diagram-3" aria-hidden="true"></i><span>Leading Page Development</span></li>
+      </ol>
+    </section>
+
+    <section id="outcomes" class="case-section container" aria-labelledby="outcomes-title">
+      <div class="case-heading case-heading--wide"><div class="tiny-label text-uppercase">Outcomes</div><h2 id="outcomes-title">What the New System Enabled</h2></div>
+      <ul class="outcomes-list">
+        <li><i class="bi bi-stars" aria-hidden="true"></i><span>New visual direction selected by stakeholders</span></li>
+        <li><i class="bi bi-grid-3x3-gap" aria-hidden="true"></i><span>Reusable architecture for nine program areas</span></li>
+        <li><i class="bi bi-devices" aria-hidden="true"></i><span>Responsive layouts across desktop, tablet, and mobile</span></li>
+        <li><i class="bi bi-columns-gap" aria-hidden="true"></i><span>Consistent UI patterns across major website sections</span></li>
+        <li><i class="bi bi-code-slash" aria-hidden="true"></i><span>Elementor extended with frontend technologies where necessary</span></li>
+        <li><i class="bi bi-arrows-collapse" aria-hidden="true"></i><span>Fragmented page experiences consolidated into a consistent system</span></li>
+        <li><i class="bi bi-arrow-repeat" aria-hidden="true"></i><span>Architecture designed to evolve alongside JerseySTEM content</span></li>
+      </ul>
+    </section>
+
+    <section id="reflection" class="case-section container" aria-labelledby="reflection-title">
+      <div class="glass-card reflection-panel p-4 p-lg-5">
+        <div class="tiny-label text-uppercase mb-3">Reflection</div><h2 id="reflection-title">What I Took Away</h2>
+        <div class="case-copy case-copy--columns"><p>JerseySTEM pushed me beyond simply translating a design into code. The project required system-level thinking: reusable patterns, evolving requirements, development overhead, and the needs of people maintaining the website afterward.</p><p>It reinforced the connection between my UX foundation and UI Engineering work. Hierarchy, accessibility, and user behavior informed the design; frontend engineering turned those decisions into a working responsive experience.</p></div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="next-project-title">
+      <div class="case-next">
+        <div><div class="tiny-label text-uppercase">Continue Exploring</div><h2 id="next-project-title">More UI engineering work.</h2></div>
+        <div class="d-flex flex-wrap gap-3"><a class="btn btn-outline-soft" href="/#web-work">Back to Projects</a><a class="btn btn-accent" href="/web-work/">Explore More Work →</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container pb-4"><div class="glass-card p-4 d-flex flex-column flex-md-row justify-content-between gap-2"><span class="text-muted-2 small">© 2026 Daniel Myers</span><a class="link-soft small" href="#top">Back to top ↑</a></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/case-study.js"></script>
+  <script src="/stars.js"></script>
+</body>
+</html>

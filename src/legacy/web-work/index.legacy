@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="../assets/brand/DM-Logo.png">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-67PW6HYJXB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-67PW6HYJXB');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UI Engineer web portfolio: responsive client sites, product surfaces, CMS builds, and production frontend work across Squarespace, WordPress, and HubSpot—with full-stack awareness.">
+  <meta name="keywords" content="Daniel Myers, UI Engineer, Web Work, Frontend Engineer, CMS Developer, WordPress, HubSpot, Squarespace, Responsive Design, Portfolio">
+  <title>Daniel Myers | UI Engineering Web Work</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" type="text/css" />
+</head>
+
+<body id="top" class="page-web-work">
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <div id="site-nav"></div>
+
+  <main class="position-relative" style="z-index:1;">
+    <section class="container py-4 py-lg-5">
+      <div class="video-hero glass-card">
+        <video class="video-hero__media" autoplay muted loop playsinline>
+          <source src="../assets/media/hero-web-work.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-hero__overlay"></div>
+
+        <div class="video-hero__content video-hero__content--tight">
+          <div class="tiny-label text-uppercase mb-2">UI Engineering Portfolio</div>
+          <h1 class="display-title mb-3"><span class="accent">Web</span> Work</h1>
+          <p class="text-muted-2 mb-0 hero-lead video-hero__lead">
+            A collection of client websites, product surfaces, and production builds that highlight responsive UI engineering, component-driven frontend work, and full-stack awareness across real business needs.
+          </p>
+
+          <div class="hero-pill-row mt-3 mb-1" aria-label="Focus areas">
+            <span class="hero-pill">Responsive UI</span>
+            <span class="hero-pill">CMS + Product Work</span>
+            <span class="hero-pill">Frontend Systems</span>
+            <span class="hero-pill">Full-Stack Support</span>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2 mt-4 pt-1">
+            <a class="btn btn-accent" href="#featured">View Featured</a>
+            <a class="btn btn-outline-soft" href="/">Back Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-4 webwork-section-focus">
+      <div class="glass-card p-4 p-lg-5">
+        <div class="row g-4 align-items-lg-center">
+          <div class="col-lg-4">
+            <div class="tiny-label text-uppercase mb-2">Focus</div>
+            <h2 class="section-title mb-0 webwork-focus-title">UI Execution That Ships</h2>
+          </div>
+          <div class="col-lg-8">
+            <p class="card-body-text mb-0 webwork-focus-body">
+              This page highlights the kind of work I enjoy most: building responsive, user-focused interfaces that turn design direction into real production experiences. Across freelance work, CMS implementations, and product-facing client builds, the common thread is clean UI execution, scalable frontend structure, and strong usability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="container py-5 webwork-section">
+      <div class="text-center mb-4 mb-lg-5">
+        <h2 class="section-title mb-0">Independent Client Work</h2>
+        <p class="text-muted-2 mt-3 mb-0 webwork-section-intro">
+          A curated set of freelance projects where I led frontend implementation, responsive layout execution, CMS configuration, and user-focused web delivery. These builds reflect my approach to UI engineering: clean interfaces, maintainable structure, and polished production-ready experiences.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="glass-card webwork-card h-100 d-flex flex-column">
+            <div class="webwork-img">
+              <img src="../assets/projects/jerseystem/JerseyStem.gif" alt="JerseySTEM website preview">
+              <span class="cms-pill">WordPress</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">JerseySTEM</div>
+              <p class="card-body-text flex-grow-1 mb-0">
+                Translated an evolving Figma direction into reusable WordPress and Elementor components, establishing responsive page patterns, consistent interaction behavior, and maintainable structures for ongoing nonprofit content.
+              </p>
+              <div class="work-card-footer mt-auto d-flex flex-wrap justify-content-between gap-3">
+                <a class="link-soft link-soft--cta" href="/work/jerseystem/">View Case Study →</a>
+                <a class="link-soft link-soft--cta" href="https://jerseystem.org/" target="_blank" rel="noopener noreferrer">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="glass-card webwork-card h-100 d-flex flex-column">
+            <div class="webwork-img">
+              <img class="impact-card-preview" src="../assets/projects/impact-humanity/Impact-humanity.gif" alt="Impact Humanity redesigned website preview">
+              <span class="cms-pill">Hostinger</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">Impact Humanity</div>
+              <p class="card-body-text flex-grow-1 mb-0">
+                Adapted the approved Figma direction to Hostinger’s implementation constraints, building responsive page structures and interactive content while refining image delivery, mobile usability, and production SEO.
+              </p>
+              <div class="work-card-footer mt-auto d-flex flex-wrap justify-content-between gap-3">
+                <a class="link-soft link-soft--cta" href="/work/impact-humanity/">View Case Study →</a>
+                <a class="link-soft link-soft--cta" href="https://impacthumanitynow.org/" target="_blank" rel="noopener noreferrer">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="glass-card webwork-card h-100 d-flex flex-column">
+            <div class="webwork-img">
+              <img src="../assets/projects/web/project-2.gif" alt="Ciemone Inc. website preview">
+              <span class="cms-pill">WordPress</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">Ciemone Inc.</div>
+              <p class="card-body-text flex-grow-1 mb-0">
+                Engineered a responsive WordPress information architecture that gives financial-service content clearer hierarchy, consistent presentation, and easier navigation across desktop and mobile experiences.
+              </p>
+              <div class="work-card-footer mt-auto">
+                <a class="link-soft link-soft--cta" href="https://www.ciemoneinc.com/" target="_blank" rel="noopener noreferrer">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="glass-card webwork-card h-100 d-flex flex-column">
+            <div class="webwork-img">
+              <img src="../assets/projects/web/project-1.gif" alt="TRVLSociety website preview">
+              <span class="cms-pill">Squarespace</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">TRVLSociety</div>
+              <p class="card-body-text flex-grow-1 mb-0">
+                Implemented a responsive Squarespace marketing experience with deliberate content hierarchy, conversion-focused user flow, and mobile refinements that preserve visual consistency within the CMS.
+              </p>
+              <div class="work-card-footer mt-auto">
+                <a class="link-soft link-soft--cta" href="https://www.trvlsociety.net/" target="_blank" rel="noopener noreferrer">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-3 py-lg-4" aria-labelledby="webwork-framing-heading">
+      <div class="glass-card webwork-framing-strip p-4 px-lg-5">
+        <div class="tiny-label text-uppercase mb-2">Positioning</div>
+        <h2 id="webwork-framing-heading" class="framing-strip-heading mb-2">UI Engineer with Full-Stack Range</h2>
+        <p class="card-body-text mb-0 framing-strip-body">
+          While UI engineering is my strongest lane, these projects also reflect my comfort working across CMS platforms, implementation constraints, backend-connected workflows, and real production delivery. That balance helps me build interfaces that not only look polished, but also work in the environments teams actually ship in.
+        </p>
+      </div>
+    </section>
+
+    <section id="bol-work" class="container py-5 webwork-section">
+      <div class="text-center mb-4 mb-lg-5">
+        <div class="tiny-label text-uppercase">Client Delivery Experience</div>
+        <h2 class="section-title mb-0 mt-2">Product &amp; Client Interface Work</h2>
+        <p class="text-muted-2 mt-3 mb-0 webwork-section-intro">
+          A broader set of client-facing projects supported through UI implementation, CMS-driven updates, responsive refinements, and production-ready frontend execution across HubSpot, WordPress, and product-oriented web environments.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="glass-card project-card h-100 d-flex flex-column">
+            <div class="project-img">
+              <img src="../assets/projects/web/project-conexiom.gif" alt="Conexiom website preview">
+              <span class="cms-pill">HubSpot</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">Conexiom</div>
+              <div class="card-body-text flex-grow-1">
+                Implemented responsive HubSpot updates through reusable CMS components, aligning spacing, behavior,
+                and content presentation so new pages remained consistent with the production design system.
+              </div>
+              <div class="work-card-footer mt-auto">
+                <div class="app-meta webwork-card-tags">
+                  <span class="app-tag">Frontend Systems</span>
+                  <span class="app-tag">Responsive UI</span>
+                </div>
+                <a href="https://conexiom.com/" target="_blank" rel="noreferrer" class="link-soft link-soft--cta d-inline-block mt-2">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="glass-card project-card h-100 d-flex flex-column">
+            <div class="project-img">
+              <img src="../assets/projects/web/project-payit.gif" alt="PayIt website preview">
+              <span class="cms-pill">WordPress</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">PayIt</div>
+              <div class="card-body-text flex-grow-1">
+                Built and refined WordPress page structures with responsive breakpoint decisions and cross-device QA,
+                preserving clear transaction-focused content hierarchy throughout the customer experience.
+              </div>
+              <div class="work-card-footer mt-auto">
+                <div class="app-meta webwork-card-tags">
+                  <span class="app-tag">Frontend Systems</span>
+                  <span class="app-tag">Cross-Device UI</span>
+                </div>
+                <a href="https://payitgov.com/" target="_blank" rel="noreferrer" class="link-soft link-soft--cta d-inline-block mt-2">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="glass-card project-card h-100 d-flex flex-column">
+            <div class="project-img">
+              <img src="../assets/projects/web/project-viventium.gif" alt="Viventium website preview">
+              <span class="cms-pill">WordPress</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">Viventium</div>
+              <div class="card-body-text flex-grow-1">
+                Updated WordPress templates and responsive layouts for a content-heavy healthcare platform,
+                standardizing presentation and interaction behavior while working within the existing CMS architecture.
+              </div>
+              <div class="work-card-footer mt-auto">
+                <div class="app-meta webwork-card-tags">
+                  <span class="app-tag">Dashboard UI</span>
+                  <span class="app-tag">Responsive Design</span>
+                </div>
+                <a href="https://viventium.com/" target="_blank" rel="noreferrer" class="link-soft link-soft--cta d-inline-block mt-2">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="glass-card project-card h-100 d-flex flex-column">
+            <div class="project-img">
+              <img src="../assets/projects/web/project-lifeloop.gif" alt="LifeLoop website preview">
+              <span class="cms-pill">WordPress</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">LifeLoop</div>
+              <div class="card-body-text flex-grow-1">
+                Maintained and improved WordPress pages through targeted component edits, responsive layout refinements,
+                and production QA, supporting a more consistent frontend experience without disrupting established content workflows.
+              </div>
+              <div class="work-card-footer mt-auto">
+                <div class="app-meta webwork-card-tags">
+                  <span class="app-tag">Frontend Systems</span>
+                  <span class="app-tag">Component UI</span>
+                </div>
+                <a href="https://lifeloop.com/" target="_blank" rel="noreferrer" class="link-soft link-soft--cta d-inline-block mt-2">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 bol-work-row-2">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="glass-card project-card h-100 d-flex flex-column">
+            <div class="project-img">
+              <img src="../assets/projects/web/Lakeside.gif" alt="Lakeside website preview">
+              <span class="cms-pill">WordPress</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">Lakeside</div>
+              <div class="card-body-text flex-grow-1">
+                Contributed UI implementation for enterprise content and product surfaces, prioritizing readable data presentation,
+                responsive structure, and reusable frontend patterns within established workflows.
+              </div>
+              <div class="work-card-footer mt-auto">
+                <div class="app-meta webwork-card-tags">
+                  <span class="app-tag">Enterprise UI</span>
+                  <span class="app-tag">Responsive Design</span>
+                  <span class="app-tag">Frontend Systems</span>
+                </div>
+                <a href="https://www.lakesidesoftware.com/" target="_blank" rel="noreferrer" class="link-soft link-soft--cta d-inline-block mt-2">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="glass-card project-card h-100 d-flex flex-column">
+            <div class="project-img">
+              <img src="../assets/projects/web/Regscale.gif" alt="RegScale website preview">
+              <span class="cms-pill">HubSpot</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">RegScale</div>
+              <div class="card-body-text flex-grow-1">
+                Supported interface implementation for compliance-focused content and product surfaces, using structured navigation,
+                consistent dashboard patterns, and responsive behavior to clarify complex enterprise workflows.
+              </div>
+              <div class="work-card-footer mt-auto">
+                <div class="app-meta webwork-card-tags">
+                  <span class="app-tag">Dashboard UI</span>
+                  <span class="app-tag">Enterprise UX</span>
+                  <span class="app-tag">Frontend</span>
+                </div>
+                <a href="https://regscale.com/" target="_blank" rel="noreferrer" class="link-soft link-soft--cta d-inline-block mt-2">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="glass-card project-card h-100 d-flex flex-column">
+            <div class="project-img">
+              <img src="../assets/projects/web/RapidAI.gif" alt="RapidAI website preview">
+              <span class="cms-pill">WordPress</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">RapidAI</div>
+              <div class="card-body-text flex-grow-1">
+                Contributed healthcare-focused UI execution with careful hierarchy, responsive behavior, and consistent component treatment,
+                helping complex clinical information remain readable across interface contexts.
+              </div>
+              <div class="work-card-footer mt-auto">
+                <div class="app-meta webwork-card-tags">
+                  <span class="app-tag">Healthcare UI</span>
+                  <span class="app-tag">Data Visibility</span>
+                  <span class="app-tag">UX Systems</span>
+                </div>
+                <a href="https://www.rapidai.com/" target="_blank" rel="noreferrer" class="link-soft link-soft--cta d-inline-block mt-2">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="glass-card project-card h-100 d-flex flex-column">
+            <div class="project-img">
+              <img src="../assets/projects/web/Synack.gif" alt="Synack website preview">
+              <span class="cms-pill">HubSpot</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="card-title">Synack</div>
+              <div class="card-body-text flex-grow-1">
+                Supported cybersecurity-oriented UI implementation with structured content patterns, responsive presentation,
+                and consistent visual hierarchy for technical workflows and data-rich experiences.
+              </div>
+              <div class="work-card-footer mt-auto">
+                <div class="app-meta webwork-card-tags">
+                  <span class="app-tag">Security UI</span>
+                  <span class="app-tag">Dashboard Design</span>
+                  <span class="app-tag">Frontend</span>
+                </div>
+                <a href="https://www.synack.com/" target="_blank" rel="noreferrer" class="link-soft link-soft--cta d-inline-block mt-2">Visit Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container py-5 pb-5 webwork-contact">
+      <div class="text-center webwork-contact-header mb-4 mb-lg-5">
+        <div class="tiny-label text-uppercase">Contact Me</div>
+        <h2 class="section-title mb-0 mt-2">Let’s Work Together</h2>
+      </div>
+
+      <div class="glass-card p-4 p-lg-5 webwork-contact-card mx-auto">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <form class="row g-3 webwork-contact-form" action="https://formspree.io/f/mdalybja" method="POST">
+              <input type="text" name="_gotcha" style="display:none">
+
+              <div class="col-md-6">
+                <label class="form-label small text-muted-2">Your Name</label>
+                <input class="form-control form-dark" type="text" name="name" placeholder="Jane Doe" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label small text-muted-2">Your Email</label>
+                <input class="form-control form-dark" type="email" name="email" placeholder="jane@email.com" required>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label small text-muted-2">Subject</label>
+                <input class="form-control form-dark" type="text" name="subject" placeholder="Project idea…" required>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label small text-muted-2">Message</label>
+                <textarea class="form-control form-dark" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+              </div>
+
+              <input type="hidden" name="_subject" value="New message from DanielMyers.dev">
+
+              <div class="col-12 text-center pt-2">
+                <button type="submit" class="btn btn-accent webwork-contact-submit px-5">Send Message</button>
+                <div class="text-muted-2 small mt-3" id="form-status"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer container py-4">
+        <div class="footer-inner glass-card p-4">
+          <div class="row g-3 align-items-center">
+            <div class="col-md-7">
+              <div class="text-muted-2 small">
+                Page made by <span class="fw-semibold">Daniel Myers</span>.
+                <span class="ms-1">© <span id="year"></span> All rights reserved.</span>
+              </div>
+
+              <div class="text-muted-2 small mt-2">
+                I only use information submitted through this site to respond to your message.
+                I do not sell, rent, or share your personal information.
+              </div>
+            </div>
+
+            <div class="col-md-5 text-md-end">
+              <a class="link-soft small me-3" href="/privacy/">Privacy Policy</a>
+              <a class="link-soft small" href="#top">Back to top ↑</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <script>
+  const form = document.querySelector('form[action="https://formspree.io/f/mdalybja"]');
+  const statusEl = document.getElementById("form-status");
+
+  if (form && statusEl) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      statusEl.textContent = "Sending...";
+
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+
+        if (res.ok) {
+          statusEl.textContent = "✅ Sent! I’ll get back to you soon.";
+          form.reset();
+        } else {
+          statusEl.textContent = "❌ Something went wrong. Try again.";
+        }
+      } catch {
+        statusEl.textContent = "❌ Network error. Try again.";
+      }
+    });
+  }
+</script>
+<script src="../nav.js"></script>
+<script src="../stars.js"></script>
+</body>
+</html>
