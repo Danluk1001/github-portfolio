@@ -495,7 +495,7 @@
     <section id="resume" class="container py-5">
       <div class="text-center section-heading-visual mb-4">
         <div class="tiny-label text-uppercase">Resume</div>
-        <h2 class="section-title mb-0">Education &amp; Software Engineering Experience</h2>
+        <h2 class="section-title mb-0">Education &amp; Experience</h2>
         <p class="section-story mb-0 mt-2">A progression from computer science foundations and production UI ownership into broader software engineering.</p>
         <div class="section-accent section-accent--timeline" aria-hidden="true"><span></span><span></span><span></span></div>
       </div>
