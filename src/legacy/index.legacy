@@ -524,7 +524,7 @@
         <div class="col-lg-6">
           <div class="glass-card p-4 h-100">
             <div class="resume-block" data-apollotech-experience data-start-date="2026-11-30" data-end-date="2027-02-26">
-              <div class="resume-dates accent" data-apollotech-dates>Nov 30, 2026 — Feb 26, 2027 · Upcoming</div>
+              <div class="resume-dates accent" data-apollotech-dates>Nov 2026 - Present</div>
               <div class="resume-title">Software Engineer Intern — ApolloTech MSI Corp</div>
               <div class="resume-sub mb-2">Picatinny Arsenal, New Jersey · Internship</div>
               <div class="resume-sub">
@@ -698,7 +698,7 @@
       const endDate = new Date(`${apolloTechExperience.dataset.endDate}T23:59:59`);
 
       if (today >= startDate && today <= endDate) {
-        apolloTechDates.textContent = "Nov 2026 — Present";
+        apolloTechDates.textContent = "Nov 2026 - Present";
       } else if (today > endDate) {
         apolloTechDates.textContent = "Nov 30, 2026 — Feb 26, 2027";
       }
